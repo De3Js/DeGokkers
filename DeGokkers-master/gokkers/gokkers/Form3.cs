@@ -29,38 +29,7 @@ namespace gokkers
             }
             Start();
         }
-        public void setKey1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(userKey1.Text))
-            {
-                keyChar = e.KeyChar.ToString();
-                userKey1.Text = keyChar;
-            }
-        }
-        public void setKey2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(userKey1.Text))
-            {
-                keyChar = e.KeyChar.ToString();
-                userKey2.Text = keyChar;
-            }
-        }
-        public void setKey3_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(userKey1.Text))
-            {
-                keyChar = e.KeyChar.ToString();
-                userKey3.Text = keyChar;
-            }
-        }
-        public void setKey4_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(userKey1.Text))
-            {
-                keyChar = e.KeyChar.ToString();
-                userKey4.Text = keyChar;
-            }
-        }
+        
         public void Start()
         {
             amountBoxFiller();
