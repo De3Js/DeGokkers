@@ -137,7 +137,7 @@ namespace gokkers
             {
                 if (names[0] != null)
                 {
-                    Program.SetNextForm(new Form4());
+                    Program.SetNextForm(new Form4(names, playerAmount));
                     this.Close();
                 }
                 else
@@ -149,7 +149,7 @@ namespace gokkers
             {
                 if (names[0] != null && names[1] != null)
                 {
-                    Program.SetNextForm(new Form4());
+                    Program.SetNextForm(new Form4(names, playerAmount));
                     this.Close();
                 }
                 else
@@ -161,7 +161,7 @@ namespace gokkers
             {
                 if (names[0] != null && names[1] != null && names[2] != null)
                 {
-                    Program.SetNextForm(new Form4());
+                    Program.SetNextForm(new Form4(names, playerAmount));
                     this.Close();
                 }
                 else
@@ -173,7 +173,7 @@ namespace gokkers
             {
                 if (names[0] != null && names[1] != null && names[2] != null && names[3] != null)
                 {
-                    Program.SetNextForm(new Form4());
+                    Program.SetNextForm(new Form4(names, playerAmount));
                     this.Close();
                 }
                 else
@@ -190,28 +190,6 @@ namespace gokkers
             playerAmountBox.Items.Add(3);
             playerAmountBox.Items.Add(4);
             playerAmountBox.SelectedIndex = 3;
-        }
-
-        private void userKey1_Click(object sender, EventArgs e)
-        {
-            this.KeyPress +=
-                new KeyPressEventHandler(setKey1_KeyPress);
-            
-        }
-        private void userKey2_Click(object sender, EventArgs e)
-        {
-            this.KeyPress +=
-                new KeyPressEventHandler(setKey2_KeyPress);
-        }
-        private void userKey3_Click(object sender, EventArgs e)
-        {
-            this.KeyPress +=
-                new KeyPressEventHandler(setKey3_KeyPress);
-        }
-        private void userKey4_Click(object sender, EventArgs e)
-        {
-            this.KeyPress +=
-                new KeyPressEventHandler(setKey4_KeyPress);
         }
     }
 }
