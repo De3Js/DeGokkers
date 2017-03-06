@@ -185,11 +185,58 @@ namespace gokkers
 
         public void amountBoxFiller()
         {
-            playerAmountBox.Items.Add(1);
             playerAmountBox.Items.Add(2);
             playerAmountBox.Items.Add(3);
             playerAmountBox.Items.Add(4);
-            playerAmountBox.SelectedIndex = 3;
+            playerAmountBox.SelectedIndex = 2;
+        }
+
+        private void setPlayersButton_Click(object sender, EventArgs e)
+        {
+            playerAmount = Convert.ToInt32(playerAmountBox.Text);
+            amountChecker();
+        }
+        public void amountChecker()
+        {
+            if (playerAmount == 4)
+            {
+                nameLabel1.Show();
+                nameTextBox1.Show();
+                nameLabel2.Show();
+                nameTextBox2.Show();
+                nameLabel3.Show();
+                nameTextBox3.Show();
+                nameLabel4.Show();
+                nameTextBox4.Show();
+                label4.Show();
+                label5.Show();
+            }
+            if (playerAmount < 4)
+            {
+                nameLabel1.Show();
+                nameTextBox1.Show();
+                nameLabel2.Show();
+                nameTextBox2.Show();
+                nameLabel3.Show();
+                nameTextBox3.Show();
+                nameLabel4.Hide();
+                nameTextBox4.Hide();
+                label4.Show();
+                label5.Hide();
+                if (playerAmount < 3)
+                {
+                    nameLabel1.Show();
+                    nameTextBox1.Show();
+                    nameLabel2.Show();
+                    nameTextBox2.Show();
+                    nameLabel3.Hide();
+                    nameTextBox3.Hide();
+                    nameLabel4.Hide();
+                    nameTextBox4.Hide();
+                    label4.Hide();
+                    label5.Hide();
+                }
+            }
         }
     }
 }

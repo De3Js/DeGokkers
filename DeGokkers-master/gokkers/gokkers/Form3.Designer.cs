@@ -55,7 +55,7 @@
             this.playerAmountBox.Location = new System.Drawing.Point(241, 64);
             this.playerAmountBox.Name = "playerAmountBox";
             this.playerAmountBox.Size = new System.Drawing.Size(121, 21);
-            this.playerAmountBox.TabIndex = 0;
+            this.playerAmountBox.TabIndex = 6;
             // 
             // playerLabel
             // 
@@ -71,16 +71,17 @@
             this.setPlayersButton.Location = new System.Drawing.Point(241, 91);
             this.setPlayersButton.Name = "setPlayersButton";
             this.setPlayersButton.Size = new System.Drawing.Size(121, 23);
-            this.setPlayersButton.TabIndex = 2;
+            this.setPlayersButton.TabIndex = 7;
             this.setPlayersButton.Text = "Set amount of players";
             this.setPlayersButton.UseVisualStyleBackColor = true;
+            this.setPlayersButton.Click += new System.EventHandler(this.setPlayersButton_Click);
             // 
             // startButton
             // 
             this.startButton.Location = new System.Drawing.Point(68, 45);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(149, 69);
-            this.startButton.TabIndex = 3;
+            this.startButton.TabIndex = 8;
             this.startButton.Text = "Start Game";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
@@ -108,7 +109,7 @@
             this.nameChangeButton.Location = new System.Drawing.Point(68, 270);
             this.nameChangeButton.Name = "nameChangeButton";
             this.nameChangeButton.Size = new System.Drawing.Size(98, 49);
-            this.nameChangeButton.TabIndex = 28;
+            this.nameChangeButton.TabIndex = 5;
             this.nameChangeButton.Text = "Change names";
             this.nameChangeButton.UseVisualStyleBackColor = true;
             this.nameChangeButton.Click += new System.EventHandler(this.nameChangeButton_Click);
@@ -118,7 +119,7 @@
             this.nameTextBox4.Location = new System.Drawing.Point(68, 241);
             this.nameTextBox4.Name = "nameTextBox4";
             this.nameTextBox4.Size = new System.Drawing.Size(149, 20);
-            this.nameTextBox4.TabIndex = 27;
+            this.nameTextBox4.TabIndex = 4;
             // 
             // nameLabel3
             // 
@@ -152,21 +153,21 @@
             this.nameTextBox2.Location = new System.Drawing.Point(68, 187);
             this.nameTextBox2.Name = "nameTextBox2";
             this.nameTextBox2.Size = new System.Drawing.Size(149, 20);
-            this.nameTextBox2.TabIndex = 23;
+            this.nameTextBox2.TabIndex = 2;
             // 
             // nameTextBox3
             // 
             this.nameTextBox3.Location = new System.Drawing.Point(68, 215);
             this.nameTextBox3.Name = "nameTextBox3";
             this.nameTextBox3.Size = new System.Drawing.Size(149, 20);
-            this.nameTextBox3.TabIndex = 22;
+            this.nameTextBox3.TabIndex = 3;
             // 
             // nameTextBox1
             // 
             this.nameTextBox1.Location = new System.Drawing.Point(68, 161);
             this.nameTextBox1.Name = "nameTextBox1";
             this.nameTextBox1.Size = new System.Drawing.Size(149, 20);
-            this.nameTextBox1.TabIndex = 21;
+            this.nameTextBox1.TabIndex = 1;
             // 
             // label1
             // 

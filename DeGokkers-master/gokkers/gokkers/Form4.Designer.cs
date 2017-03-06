@@ -39,6 +39,11 @@
             this.vlooi4 = new System.Windows.Forms.PictureBox();
             this.vlooi2 = new System.Windows.Forms.PictureBox();
             this.vlooi1 = new System.Windows.Forms.PictureBox();
+            this.LEADERBOARD = new System.Windows.Forms.Label();
+            this.playerScore1 = new System.Windows.Forms.Label();
+            this.playerScore2 = new System.Windows.Forms.Label();
+            this.playerScore3 = new System.Windows.Forms.Label();
+            this.playerScore4 = new System.Windows.Forms.Label();
             this.playBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.countdownGo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.countdown1)).BeginInit();
@@ -59,7 +64,6 @@
             this.playBox.Controls.Add(this.countdown1);
             this.playBox.Controls.Add(this.countdown2);
             this.playBox.Controls.Add(this.countdown3);
-            this.playBox.Controls.Add(this.startButton);
             this.playBox.Controls.Add(this.vlooi3);
             this.playBox.Controls.Add(this.vlooi4);
             this.playBox.Controls.Add(this.vlooi2);
@@ -112,11 +116,11 @@
             // 
             // startButton
             // 
-            this.startButton.BackColor = System.Drawing.Color.Black;
+            this.startButton.BackColor = System.Drawing.Color.DimGray;
             this.startButton.FlatAppearance.BorderSize = 0;
             this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.startButton.Location = new System.Drawing.Point(400, 386);
+            this.startButton.Location = new System.Drawing.Point(994, 376);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(182, 31);
             this.startButton.TabIndex = 15;
@@ -180,11 +184,66 @@
             this.vlooi1.TabIndex = 11;
             this.vlooi1.TabStop = false;
             // 
+            // LEADERBOARD
+            // 
+            this.LEADERBOARD.AutoSize = true;
+            this.LEADERBOARD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LEADERBOARD.Font = new System.Drawing.Font("AR CENA", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LEADERBOARD.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LEADERBOARD.Location = new System.Drawing.Point(989, 10);
+            this.LEADERBOARD.Name = "LEADERBOARD";
+            this.LEADERBOARD.Size = new System.Drawing.Size(201, 43);
+            this.LEADERBOARD.TabIndex = 10;
+            this.LEADERBOARD.Text = "LEADERBOARD";
+            // 
+            // playerScore1
+            // 
+            this.playerScore1.Font = new System.Drawing.Font("AR CENA", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerScore1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.playerScore1.Location = new System.Drawing.Point(989, 114);
+            this.playerScore1.Name = "playerScore1";
+            this.playerScore1.Size = new System.Drawing.Size(201, 43);
+            this.playerScore1.TabIndex = 11;
+            // 
+            // playerScore2
+            // 
+            this.playerScore2.Font = new System.Drawing.Font("AR CENA", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerScore2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.playerScore2.Location = new System.Drawing.Point(989, 172);
+            this.playerScore2.Name = "playerScore2";
+            this.playerScore2.Size = new System.Drawing.Size(201, 43);
+            this.playerScore2.TabIndex = 12;
+            // 
+            // playerScore3
+            // 
+            this.playerScore3.Font = new System.Drawing.Font("AR CENA", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerScore3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.playerScore3.Location = new System.Drawing.Point(989, 231);
+            this.playerScore3.Name = "playerScore3";
+            this.playerScore3.Size = new System.Drawing.Size(201, 43);
+            this.playerScore3.TabIndex = 13;
+            // 
+            // playerScore4
+            // 
+            this.playerScore4.Font = new System.Drawing.Font("AR CENA", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerScore4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.playerScore4.Location = new System.Drawing.Point(989, 291);
+            this.playerScore4.Name = "playerScore4";
+            this.playerScore4.Size = new System.Drawing.Size(201, 43);
+            this.playerScore4.TabIndex = 14;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 431);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(1202, 431);
+            this.Controls.Add(this.playerScore4);
+            this.Controls.Add(this.playerScore3);
+            this.Controls.Add(this.playerScore2);
+            this.Controls.Add(this.playerScore1);
+            this.Controls.Add(this.startButton);
+            this.Controls.Add(this.LEADERBOARD);
             this.Controls.Add(this.playBox);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -201,6 +260,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vlooi2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vlooi1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -215,5 +275,10 @@
         private System.Windows.Forms.PictureBox countdown1;
         private System.Windows.Forms.PictureBox countdown2;
         private System.Windows.Forms.PictureBox countdown3;
+        private System.Windows.Forms.Label LEADERBOARD;
+        private System.Windows.Forms.Label playerScore1;
+        private System.Windows.Forms.Label playerScore2;
+        private System.Windows.Forms.Label playerScore3;
+        private System.Windows.Forms.Label playerScore4;
     }
 }
