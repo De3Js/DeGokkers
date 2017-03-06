@@ -16,5 +16,20 @@ namespace gokkers
         {
             InitializeComponent();
         }
+
+        public void playerPress1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (true)
+            {
+
+            }
+        }
+        public void playerPress2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (true)
+            {
+
+            }
+        }
     }
 }

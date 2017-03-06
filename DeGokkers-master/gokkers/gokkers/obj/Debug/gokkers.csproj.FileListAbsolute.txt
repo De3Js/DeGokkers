@@ -50,3 +50,6 @@ C:\Users\joeyo\Dropbox\De gokkers\gokkers\gokkers\obj\Debug\gokkers.Form3.resour
 C:\Users\joeyo\Dropbox\De gokkers\gokkers\gokkers\obj\Debug\gokkers.Form4.resources
 C:\Users\joeyo\Dropbox\De gokkers\gokkers\gokkers\obj\Debug\gokkers.GameChooseMenu.resources
 C:\Users\lontj\Dropbox\P03\PR\De gokkers\gokkers\gokkers\obj\Debug\gokkers.Form4.resources
+C:\School\DeGokkers\DeGokkers-master\gokkers\gokkers\bin\Debug\gokkers.exe.config
+C:\School\DeGokkers\DeGokkers-master\gokkers\gokkers\obj\Debug\gokkers.exe
+C:\School\DeGokkers\DeGokkers-master\gokkers\gokkers\obj\Debug\gokkers.pdb

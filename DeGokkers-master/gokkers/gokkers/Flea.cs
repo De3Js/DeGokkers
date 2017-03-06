@@ -11,16 +11,25 @@ namespace gokkers
         public Random Randomizer;   //Een instantie van Random (= Willekeurig)
         public Flea[] fleas = new Flea[15];
         public string name;
+        public int move;
+
         public Flea(string name)
         {
+            Randomizer = new Random();
             this.name = name;
+            this.move = Randomizer.Next(5, 10);
         }
+
+        public Flea(string name, int move)
+        {
+            this.name = name;
+            this.move = move;
+        }
+
         public bool Run(PictureBox MyPictureBox)
         {
             this.MyPictureBox = MyPictureBox;
             this.RaceTrackLength = 888;
-            Randomizer = new Random();
-            int move = Randomizer.Next(5, 10);
             MyPictureBox.Location = new Point(MyPictureBox.Location.X + move, MyPictureBox.Location.Y);
             Application.DoEvents();
             if (MyPictureBox.Location.X >= RaceTrackLength)
