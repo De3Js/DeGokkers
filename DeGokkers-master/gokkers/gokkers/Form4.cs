@@ -84,7 +84,8 @@ namespace gokkers
                 MessageBox.Show(fleas[0].name + " has won!");
                 started = false;
                 countdown = true;
-                    for (int i = 0; i < fleas.Length; i++)
+                PositionChecker();
+                for (int i = 0; i < fleas.Length; i++)
                 {
                     fleas[i].TakeStartingPosition();
                 }
@@ -102,6 +103,7 @@ namespace gokkers
                 MessageBox.Show(fleas[1].name + " has won!");
                 started = false;
                 countdown = true;
+                PositionChecker();
                 for (int i = 0; i < fleas.Length; i++)
                 {
                     fleas[i].TakeStartingPosition();
@@ -121,6 +123,7 @@ namespace gokkers
                 MessageBox.Show(fleas[2].name + " has won!");
                 started = false;
                 countdown = true;
+                PositionChecker();
                 for (int i = 0; i < fleas.Length; i++)
                 {
                     fleas[i].TakeStartingPosition();
@@ -141,6 +144,7 @@ namespace gokkers
                 MessageBox.Show(fleas[3].name + " has won!");
                 started = false;
                 countdown = true;
+                PositionChecker();
                 for (int i = 0; i < fleas.Length; i++)
                 {
                     fleas[i].TakeStartingPosition();
@@ -243,6 +247,7 @@ namespace gokkers
                     }
                 }
             }
+            RefreshScoreBoard();
         }
         private void RefreshScoreBoard()
         {
