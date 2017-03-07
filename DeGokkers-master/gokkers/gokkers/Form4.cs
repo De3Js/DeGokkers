@@ -214,7 +214,22 @@ namespace gokkers
         }
         private void RefreshScoreBoard()
         {
-
+            if(fleas[0].GetLocation() > fleas[1].GetLocation() && fleas[0].GetLocation() > fleas[2].GetLocation() && fleas[0].GetLocation() > fleas[3].GetLocation())
+            {
+                scores[0] += 3;
+            }
+            if (fleas[1].GetLocation() > fleas[0].GetLocation() && fleas[1].GetLocation() > fleas[2].GetLocation() && fleas[1].GetLocation() > fleas[3].GetLocation())
+            {
+                scores[1] += 3;
+            }
+            if (fleas[2].GetLocation() > fleas[0].GetLocation() && fleas[2].GetLocation() > fleas[1].GetLocation() && fleas[2].GetLocation() > fleas[3].GetLocation())
+            {
+                scores[2] += 3;
+            }
+            if (fleas[3].GetLocation() > fleas[0].GetLocation() && fleas[3].GetLocation() > fleas[1].GetLocation() && fleas[3].GetLocation() > fleas[2].GetLocation())
+            {
+                scores[3] += 3;
+            }
         }
         private void Form4_Load(object sender, EventArgs e)
         {
