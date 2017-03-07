@@ -42,16 +42,7 @@ namespace gokkers
             countdown1.Hide();
             countdown2.Hide();
             countdown3.Hide();
-            countdownGo.Hide();
-
-            this.KeyPress +=
-                new KeyPressEventHandler(playerPress1_KeyPress);
-            this.KeyPress +=
-                new KeyPressEventHandler(playerPress2_KeyPress);
-            this.KeyPress +=
-                new KeyPressEventHandler(playerPress3_KeyPress);
-            this.KeyPress +=
-                new KeyPressEventHandler(playerPress4_KeyPress);
+            countdownGo.Hide();        
         }
         public void ArrayFiller()
         {
@@ -92,7 +83,7 @@ namespace gokkers
                 MessageBox.Show(fleas[0].name + " has won!");
                 started = false;
                 countdown = true;
-                for (int i = 0; i < fleas.Length; i++)
+                    for (int i = 0; i < fleas.Length; i++)
                 {
                     fleas[i].TakeStartingPosition();
                 }
@@ -113,6 +104,7 @@ namespace gokkers
                 for (int i = 0; i < fleas.Length; i++)
                 {
                     fleas[i].TakeStartingPosition();
+
                 }
             }
         }
@@ -150,6 +142,7 @@ namespace gokkers
                 {
                     fleas[i].TakeStartingPosition();
                 }
+                RefreshScoreBoard();
             }
         }
         public void MakePlayers()
@@ -207,6 +200,21 @@ namespace gokkers
                 fleas[2].Run(vlooi3);
                 fleas[3].Run(vlooi4);
             }
+            if (started == true)
+            {
+                this.KeyPress +=
+               new KeyPressEventHandler(playerPress1_KeyPress);
+                this.KeyPress +=
+                    new KeyPressEventHandler(playerPress2_KeyPress);
+                this.KeyPress +=
+                    new KeyPressEventHandler(playerPress3_KeyPress);
+                this.KeyPress +=
+                    new KeyPressEventHandler(playerPress4_KeyPress);
+            }
+        }
+        private void RefreshScoreBoard()
+        {
+
         }
         private void Form4_Load(object sender, EventArgs e)
         {
