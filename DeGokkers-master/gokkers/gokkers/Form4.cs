@@ -23,6 +23,7 @@ namespace gokkers
         public bool finished = false;
         public bool started = false;
         public int[] scores = new int[4];
+        public int[] position = new int[4];
 
         public Form4(string[] names, int playerAmount)
         {
@@ -135,6 +136,8 @@ namespace gokkers
             if (fleas[3].GetLocation() >= fleas[3].GetRaceTrackLength())
             {
                 finished = true;
+                PositionChecker();
+                RefreshScoreBoard();
                 MessageBox.Show(fleas[3].name + " has won!");
                 started = false;
                 countdown = true;
@@ -142,7 +145,6 @@ namespace gokkers
                 {
                     fleas[i].TakeStartingPosition();
                 }
-                RefreshScoreBoard();
             }
         }
         public void MakePlayers()
@@ -212,24 +214,63 @@ namespace gokkers
                     new KeyPressEventHandler(playerPress4_KeyPress);
             }
         }
+        private void PositionChecker()
+        {
+            for (int i = 0; i < fleas.Length; i++)
+            {
+                position[i] = fleas[i].GetLocation();
+            }
+            BubbleSort(position);
+            for(int i = 0; i < position.Length; i++)
+            {
+                for (int j = 0; j < fleas.Length; j++)
+                {
+                    if (position[0] == fleas[j].GetLocation())
+                    {
+                        scores[j] += 3;
+                    }
+                    if(position[1] == fleas[j].GetLocation())
+                    {
+                        scores[j] += 2;
+                    }
+                    if(position[2] == fleas[j].GetLocation())
+                    {
+                        scores[j] += 1;
+                    }
+                    if(position[3] == fleas[j].GetLocation())
+                    {
+                        scores[j] += 0;
+                    }
+                }
+            }
+        }
         private void RefreshScoreBoard()
         {
-            if(fleas[0].GetLocation() > fleas[1].GetLocation() && fleas[0].GetLocation() > fleas[2].GetLocation() && fleas[0].GetLocation() > fleas[3].GetLocation())
+            playerScore1.Text = players[0].name + " - " + scores[0];
+            playerScore2.Text = players[1].name + " - " + scores[1];
+            playerScore3.Text = players[2].name + " - " + scores[2];
+            playerScore4.Text = players[3].name + " - " + scores[3];
+        }
+        static int[] BubbleSort(int[] unsorted)
+        {
+            bool swapped;
+            do
             {
-                scores[0] += 3;
-            }
-            if (fleas[1].GetLocation() > fleas[0].GetLocation() && fleas[1].GetLocation() > fleas[2].GetLocation() && fleas[1].GetLocation() > fleas[3].GetLocation())
-            {
-                scores[1] += 3;
-            }
-            if (fleas[2].GetLocation() > fleas[0].GetLocation() && fleas[2].GetLocation() > fleas[1].GetLocation() && fleas[2].GetLocation() > fleas[3].GetLocation())
-            {
-                scores[2] += 3;
-            }
-            if (fleas[3].GetLocation() > fleas[0].GetLocation() && fleas[3].GetLocation() > fleas[1].GetLocation() && fleas[3].GetLocation() > fleas[2].GetLocation())
-            {
-                scores[3] += 3;
-            }
+                swapped = false;
+                for (int i = 0; i < unsorted.Length - 1; i++)
+                {
+                    if (unsorted[i] < unsorted[i + 1])
+                    {
+                        int temp = unsorted[i];
+                        unsorted[i] = unsorted[i + 1];
+                        unsorted[i + 1] = temp;
+                        swapped = true;
+                    }
+                }
+            } while (swapped);
+            int[] sorted = new int[unsorted.Length];
+            sorted = unsorted;
+            return sorted;
         }
         private void Form4_Load(object sender, EventArgs e)
         {
