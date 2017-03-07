@@ -139,7 +139,7 @@ namespace gokkers
             if (fleas[3].GetLocation() >= fleas[3].GetRaceTrackLength())
             {
                 finished = true;
-                PositionChecker();
+                
                 RefreshScoreBoard();
                 MessageBox.Show(fleas[3].name + " has won!");
                 started = false;
@@ -225,26 +225,23 @@ namespace gokkers
                 position[i] = fleas[i].GetLocation();
             }
             BubbleSort(position);
-            for(int i = 0; i < position.Length; i++)
+            for (int j = 0; j < fleas.Length; j++)
             {
-                for (int j = 0; j < fleas.Length; j++)
+                if (position[3] == fleas[j].GetLocation())
                 {
-                    if (position[0] == fleas[j].GetLocation())
-                    {
-                        scores[j] += 3;
-                    }
-                    if(position[1] == fleas[j].GetLocation())
-                    {
-                        scores[j] += 2;
-                    }
-                    if(position[2] == fleas[j].GetLocation())
-                    {
-                        scores[j] += 1;
-                    }
-                    if(position[3] == fleas[j].GetLocation())
-                    {
-                        scores[j] += 0;
-                    }
+                    scores[j] += 3;
+                }
+                if(position[2] == fleas[j].GetLocation())
+                {
+                    scores[j] += 2;
+                }
+                if(position[1] == fleas[j].GetLocation())
+                {
+                    scores[j] += 1;
+                }
+                if(position[0] == fleas[j].GetLocation())
+                {
+                    scores[j] += 0;
                 }
             }
             RefreshScoreBoard();
@@ -253,8 +250,15 @@ namespace gokkers
         {
             playerScore1.Text = players[0].name + " - " + scores[0];
             playerScore2.Text = players[1].name + " - " + scores[1];
-            playerScore3.Text = players[2].name + " - " + scores[2];
-            playerScore4.Text = players[3].name + " - " + scores[3];
+            if (players.Length == 3)
+            {
+                playerScore3.Text = players[2].name + " - " + scores[2];
+            }
+            else if(players.Length == 4)
+            {
+                playerScore3.Text = players[2].name + " - " + scores[2];
+                playerScore4.Text = players[3].name + " - " + scores[3];
+            }
         }
         static int[] BubbleSort(int[] unsorted)
         {
@@ -264,7 +268,7 @@ namespace gokkers
                 swapped = false;
                 for (int i = 0; i < unsorted.Length - 1; i++)
                 {
-                    if (unsorted[i] < unsorted[i + 1])
+                    if (unsorted[i] > unsorted[i + 1])
                     {
                         int temp = unsorted[i];
                         unsorted[i] = unsorted[i + 1];
