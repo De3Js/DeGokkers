@@ -23,8 +23,6 @@ namespace gokkers
         public bool finished = false;
         public bool started = false;
         public int[] scores = new int[4];
-        public int[] position = new int[4];
-        public int[] calcPosition = new int[4];
 
         public Form4(string[] names, int playerAmount)
         {
@@ -233,45 +231,6 @@ namespace gokkers
                 scores[3] += 3;
             }
         }
-        public void positionChecker()
-        {
-            for (int i = 0; i < fleas.Length; i++)
-            {
-                position[i] = fleas[i].GetLocation();
-            }
-
-            calcPosition = Bubblesort(position);
-        }
-        static int[] Bubblesort(int[] unsorted)
-        {
-            bool swapped;
-            int[] sorted = new int[unsorted.Length];
-
-            for (int i = 0; i < unsorted.Length; i++)
-            {
-                sorted[i] = unsorted[i];
-            }
-
-            do
-            {
-                swapped = false;
-
-                for (int i = 0; i < sorted.Length - 1; i++)
-                {
-                    if (sorted[i] < sorted[i + 1])
-                    {
-                        int temp = sorted[i];
-                        sorted[i] = sorted[i + 1];
-                        sorted[i + 1] = temp;
-                        swapped = true;
-                    }
-                }
-            }
-            while (swapped);
-
-            return sorted;
-        }
-
         private void Form4_Load(object sender, EventArgs e)
         {
 
