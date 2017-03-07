@@ -44,7 +44,6 @@ namespace gokkers
             countdown3.Hide();
             countdownGo.Hide();        
         }
-        
         public void ArrayFiller()
         {
             for (int i = 0; i < scores.Length; i++)

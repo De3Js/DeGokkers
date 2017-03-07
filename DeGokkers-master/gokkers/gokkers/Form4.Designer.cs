@@ -69,18 +69,19 @@
             this.playBox.Controls.Add(this.vlooi2);
             this.playBox.Controls.Add(this.vlooi1);
             this.playBox.Location = new System.Drawing.Point(0, 2);
-            this.playBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.playBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.playBox.Name = "playBox";
-            this.playBox.Size = new System.Drawing.Size(975, 431);
+            this.playBox.Size = new System.Drawing.Size(1300, 530);
             this.playBox.TabIndex = 9;
             // 
             // countdownGo
             // 
             this.countdownGo.BackColor = System.Drawing.Color.Transparent;
             this.countdownGo.Image = global::gokkers.Properties.Resources.pancyGo;
-            this.countdownGo.Location = new System.Drawing.Point(347, 112);
+            this.countdownGo.Location = new System.Drawing.Point(463, 138);
+            this.countdownGo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.countdownGo.Name = "countdownGo";
-            this.countdownGo.Size = new System.Drawing.Size(267, 165);
+            this.countdownGo.Size = new System.Drawing.Size(356, 203);
             this.countdownGo.TabIndex = 19;
             this.countdownGo.TabStop = false;
             // 
@@ -88,9 +89,10 @@
             // 
             this.countdown1.BackColor = System.Drawing.Color.Transparent;
             this.countdown1.Image = global::gokkers.Properties.Resources.pancy1;
-            this.countdown1.Location = new System.Drawing.Point(417, 112);
+            this.countdown1.Location = new System.Drawing.Point(556, 138);
+            this.countdown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.countdown1.Name = "countdown1";
-            this.countdown1.Size = new System.Drawing.Size(123, 159);
+            this.countdown1.Size = new System.Drawing.Size(164, 196);
             this.countdown1.TabIndex = 18;
             this.countdown1.TabStop = false;
             // 
@@ -98,9 +100,10 @@
             // 
             this.countdown2.BackColor = System.Drawing.Color.Transparent;
             this.countdown2.Image = global::gokkers.Properties.Resources.pancy2;
-            this.countdown2.Location = new System.Drawing.Point(426, 112);
+            this.countdown2.Location = new System.Drawing.Point(568, 138);
+            this.countdown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.countdown2.Name = "countdown2";
-            this.countdown2.Size = new System.Drawing.Size(114, 154);
+            this.countdown2.Size = new System.Drawing.Size(152, 190);
             this.countdown2.TabIndex = 17;
             this.countdown2.TabStop = false;
             // 
@@ -108,9 +111,10 @@
             // 
             this.countdown3.BackColor = System.Drawing.Color.Transparent;
             this.countdown3.Image = global::gokkers.Properties.Resources.pancy3;
-            this.countdown3.Location = new System.Drawing.Point(417, 112);
+            this.countdown3.Location = new System.Drawing.Point(556, 138);
+            this.countdown3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.countdown3.Name = "countdown3";
-            this.countdown3.Size = new System.Drawing.Size(110, 138);
+            this.countdown3.Size = new System.Drawing.Size(147, 170);
             this.countdown3.TabIndex = 16;
             this.countdown3.TabStop = false;
             // 
@@ -120,10 +124,10 @@
             this.vlooi3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vlooi3.BackgroundImage")));
             this.vlooi3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vlooi3.Image = ((System.Drawing.Image)(resources.GetObject("vlooi3.Image")));
-            this.vlooi3.Location = new System.Drawing.Point(10, 188);
+            this.vlooi3.Location = new System.Drawing.Point(13, 231);
             this.vlooi3.Margin = new System.Windows.Forms.Padding(1);
             this.vlooi3.Name = "vlooi3";
-            this.vlooi3.Size = new System.Drawing.Size(108, 89);
+            this.vlooi3.Size = new System.Drawing.Size(144, 110);
             this.vlooi3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.vlooi3.TabIndex = 14;
             this.vlooi3.TabStop = false;
@@ -134,10 +138,10 @@
             this.vlooi4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vlooi4.BackgroundImage")));
             this.vlooi4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vlooi4.Image = ((System.Drawing.Image)(resources.GetObject("vlooi4.Image")));
-            this.vlooi4.Location = new System.Drawing.Point(10, 279);
+            this.vlooi4.Location = new System.Drawing.Point(13, 343);
             this.vlooi4.Margin = new System.Windows.Forms.Padding(1);
             this.vlooi4.Name = "vlooi4";
-            this.vlooi4.Size = new System.Drawing.Size(108, 89);
+            this.vlooi4.Size = new System.Drawing.Size(144, 110);
             this.vlooi4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.vlooi4.TabIndex = 13;
             this.vlooi4.TabStop = false;
@@ -148,10 +152,10 @@
             this.vlooi2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vlooi2.BackgroundImage")));
             this.vlooi2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vlooi2.Image = ((System.Drawing.Image)(resources.GetObject("vlooi2.Image")));
-            this.vlooi2.Location = new System.Drawing.Point(10, 98);
+            this.vlooi2.Location = new System.Drawing.Point(13, 121);
             this.vlooi2.Margin = new System.Windows.Forms.Padding(1);
             this.vlooi2.Name = "vlooi2";
-            this.vlooi2.Size = new System.Drawing.Size(108, 89);
+            this.vlooi2.Size = new System.Drawing.Size(144, 110);
             this.vlooi2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.vlooi2.TabIndex = 12;
             this.vlooi2.TabStop = false;
@@ -162,10 +166,10 @@
             this.vlooi1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vlooi1.BackgroundImage")));
             this.vlooi1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vlooi1.Image = ((System.Drawing.Image)(resources.GetObject("vlooi1.Image")));
-            this.vlooi1.Location = new System.Drawing.Point(10, 8);
+            this.vlooi1.Location = new System.Drawing.Point(13, 10);
             this.vlooi1.Margin = new System.Windows.Forms.Padding(1);
             this.vlooi1.Name = "vlooi1";
-            this.vlooi1.Size = new System.Drawing.Size(108, 89);
+            this.vlooi1.Size = new System.Drawing.Size(144, 110);
             this.vlooi1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.vlooi1.TabIndex = 11;
             this.vlooi1.TabStop = false;
@@ -176,9 +180,10 @@
             this.startButton.FlatAppearance.BorderSize = 0;
             this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.startButton.Location = new System.Drawing.Point(994, 376);
+            this.startButton.Location = new System.Drawing.Point(1325, 463);
+            this.startButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(182, 31);
+            this.startButton.Size = new System.Drawing.Size(243, 38);
             this.startButton.TabIndex = 15;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = false;
@@ -186,57 +191,63 @@
             // 
             // LEADERBOARD
             // 
+            this.LEADERBOARD.AutoSize = true;
             this.LEADERBOARD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LEADERBOARD.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LEADERBOARD.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LEADERBOARD.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LEADERBOARD.Location = new System.Drawing.Point(994, 9);
+            this.LEADERBOARD.Location = new System.Drawing.Point(1307, 12);
+            this.LEADERBOARD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LEADERBOARD.Name = "LEADERBOARD";
-            this.LEADERBOARD.Size = new System.Drawing.Size(196, 33);
+            this.LEADERBOARD.Size = new System.Drawing.Size(356, 54);
             this.LEADERBOARD.TabIndex = 10;
             this.LEADERBOARD.Text = "LEADERBOARD";
             // 
             // playerScore1
             // 
-            this.playerScore1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerScore1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerScore1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.playerScore1.Location = new System.Drawing.Point(989, 114);
+            this.playerScore1.Location = new System.Drawing.Point(1319, 140);
+            this.playerScore1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.playerScore1.Name = "playerScore1";
-            this.playerScore1.Size = new System.Drawing.Size(201, 43);
+            this.playerScore1.Size = new System.Drawing.Size(268, 53);
             this.playerScore1.TabIndex = 11;
             // 
             // playerScore2
             // 
-            this.playerScore2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerScore2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerScore2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.playerScore2.Location = new System.Drawing.Point(989, 172);
+            this.playerScore2.Location = new System.Drawing.Point(1319, 212);
+            this.playerScore2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.playerScore2.Name = "playerScore2";
-            this.playerScore2.Size = new System.Drawing.Size(201, 43);
+            this.playerScore2.Size = new System.Drawing.Size(268, 53);
             this.playerScore2.TabIndex = 12;
             // 
             // playerScore3
             // 
-            this.playerScore3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerScore3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerScore3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.playerScore3.Location = new System.Drawing.Point(989, 231);
+            this.playerScore3.Location = new System.Drawing.Point(1319, 284);
+            this.playerScore3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.playerScore3.Name = "playerScore3";
-            this.playerScore3.Size = new System.Drawing.Size(201, 43);
+            this.playerScore3.Size = new System.Drawing.Size(268, 53);
             this.playerScore3.TabIndex = 13;
             // 
             // playerScore4
             // 
-            this.playerScore4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerScore4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerScore4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.playerScore4.Location = new System.Drawing.Point(989, 291);
+            this.playerScore4.Location = new System.Drawing.Point(1319, 358);
+            this.playerScore4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.playerScore4.Name = "playerScore4";
-            this.playerScore4.Size = new System.Drawing.Size(201, 43);
+            this.playerScore4.Size = new System.Drawing.Size(268, 53);
             this.playerScore4.TabIndex = 14;
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1202, 431);
+            this.ClientSize = new System.Drawing.Size(1603, 530);
             this.Controls.Add(this.playerScore4);
             this.Controls.Add(this.playerScore3);
             this.Controls.Add(this.playerScore2);
@@ -245,7 +256,7 @@
             this.Controls.Add(this.LEADERBOARD);
             this.Controls.Add(this.playBox);
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -259,6 +270,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vlooi2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vlooi1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
