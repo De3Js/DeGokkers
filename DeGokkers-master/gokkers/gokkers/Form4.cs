@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace gokkers
 {
@@ -24,6 +25,7 @@ namespace gokkers
         public bool started = false;
         public int[] scores = new int[4];
         public int[] position = new int[4];
+        private SoundPlayer splayer = new SoundPlayer();
 
         public Form4(string[] names, int playerAmount)
         {
@@ -107,7 +109,6 @@ namespace gokkers
                 for (int i = 0; i < fleas.Length; i++)
                 {
                     fleas[i].TakeStartingPosition();
-
                 }
             }
         }
@@ -139,15 +140,13 @@ namespace gokkers
             if (fleas[3].GetLocation() >= fleas[3].GetRaceTrackLength())
             {
                 finished = true;
-                
-                RefreshScoreBoard();
+                PositionChecker();
                 MessageBox.Show(fleas[3].name + " has won!");
                 started = false;
                 countdown = true;
-                PositionChecker();
                 for (int i = 0; i < fleas.Length; i++)
                 {
-                    fleas[i].TakeStartingPosition();
+                    fleas[i].TakeStartingPosition();               
                 }
             }
         }
@@ -201,6 +200,9 @@ namespace gokkers
                 DoCountdown();
                 countdown = false;
                 started = true;
+                splayer.SoundLocation = "Audio/Race2.wav";
+                splayer.Load();
+                splayer.Play();
                 fleas[0].Run(vlooi1);
                 fleas[1].Run(vlooi2);
                 fleas[2].Run(vlooi3);
@@ -229,22 +231,41 @@ namespace gokkers
             {
                 if (position[3] == fleas[j].GetLocation())
                 {
-                    scores[j] += 3;
+                    if(playerAmount == 4)
+                        scores[j] += 3;
+                    if (playerAmount == 3)
+                        scores[j] += 2;
+                    if (playerAmount == 2)
+                        scores[j] += 1;
                 }
                 if(position[2] == fleas[j].GetLocation())
                 {
-                    scores[j] += 2;
+                    if (playerAmount == 4)
+                        scores[j] += 2;
+                    if (playerAmount == 3)
+                        scores[j] += 1;
+                    if (playerAmount == 2)
+                        scores[j] += 0;
                 }
-                if(position[1] == fleas[j].GetLocation())
+                else if(position[1] == fleas[j].GetLocation())
                 {
-                    scores[j] += 1;
+                    if (playerAmount == 4)
+                        scores[j] += 1;
+                    if (playerAmount == 3)
+                        scores[j] += 0;
+                    if (playerAmount == 2)
+                        scores[j] += 0;
+
+
                 }
                 if(position[0] == fleas[j].GetLocation())
                 {
-                    scores[j] += 0;
+                    if (playerAmount == 4)
+                        scores[j] += 0;
                 }
             }
             RefreshScoreBoard();
+            splayer.Stop();
         }
         private void RefreshScoreBoard()
         {

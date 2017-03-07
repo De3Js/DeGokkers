@@ -79,7 +79,7 @@
             this.countdownGo.BackColor = System.Drawing.Color.Transparent;
             this.countdownGo.Image = global::gokkers.Properties.Resources.pancyGo;
             this.countdownGo.Location = new System.Drawing.Point(463, 138);
-            this.countdownGo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.countdownGo.Margin = new System.Windows.Forms.Padding(4);
             this.countdownGo.Name = "countdownGo";
             this.countdownGo.Size = new System.Drawing.Size(356, 203);
             this.countdownGo.TabIndex = 19;
@@ -90,7 +90,7 @@
             this.countdown1.BackColor = System.Drawing.Color.Transparent;
             this.countdown1.Image = global::gokkers.Properties.Resources.pancy1;
             this.countdown1.Location = new System.Drawing.Point(556, 138);
-            this.countdown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.countdown1.Margin = new System.Windows.Forms.Padding(4);
             this.countdown1.Name = "countdown1";
             this.countdown1.Size = new System.Drawing.Size(164, 196);
             this.countdown1.TabIndex = 18;
@@ -101,7 +101,7 @@
             this.countdown2.BackColor = System.Drawing.Color.Transparent;
             this.countdown2.Image = global::gokkers.Properties.Resources.pancy2;
             this.countdown2.Location = new System.Drawing.Point(568, 138);
-            this.countdown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.countdown2.Margin = new System.Windows.Forms.Padding(4);
             this.countdown2.Name = "countdown2";
             this.countdown2.Size = new System.Drawing.Size(152, 190);
             this.countdown2.TabIndex = 17;
@@ -112,7 +112,7 @@
             this.countdown3.BackColor = System.Drawing.Color.Transparent;
             this.countdown3.Image = global::gokkers.Properties.Resources.pancy3;
             this.countdown3.Location = new System.Drawing.Point(556, 138);
-            this.countdown3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.countdown3.Margin = new System.Windows.Forms.Padding(4);
             this.countdown3.Name = "countdown3";
             this.countdown3.Size = new System.Drawing.Size(147, 170);
             this.countdown3.TabIndex = 16;
@@ -181,7 +181,7 @@
             this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.startButton.Location = new System.Drawing.Point(1325, 463);
-            this.startButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.startButton.Margin = new System.Windows.Forms.Padding(4);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(243, 38);
             this.startButton.TabIndex = 15;
@@ -193,12 +193,12 @@
             // 
             this.LEADERBOARD.AutoSize = true;
             this.LEADERBOARD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LEADERBOARD.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LEADERBOARD.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LEADERBOARD.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.LEADERBOARD.Location = new System.Drawing.Point(1307, 12);
             this.LEADERBOARD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LEADERBOARD.Name = "LEADERBOARD";
-            this.LEADERBOARD.Size = new System.Drawing.Size(356, 54);
+            this.LEADERBOARD.Size = new System.Drawing.Size(303, 44);
             this.LEADERBOARD.TabIndex = 10;
             this.LEADERBOARD.Text = "LEADERBOARD";
             // 
