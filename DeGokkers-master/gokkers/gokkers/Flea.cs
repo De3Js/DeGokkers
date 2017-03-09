@@ -46,11 +46,7 @@ namespace gokkers
         }
         public void TakeStartingPosition()
         {
-            do
-            {
-                MyPictureBox.Location = new Point(MyPictureBox.Location.X - 5, MyPictureBox.Location.Y);
-            } while (MyPictureBox.Location.X <= 4);
-        
+            MyPictureBox.Location = new Point(4, MyPictureBox.Location.Y);
             //Wijzig mijn locatie naar de startlijn.
         }
         public int GetRaceTrackLength()
