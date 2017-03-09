@@ -46,10 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.userKey1 = new System.Windows.Forms.Button();
-            this.userKey2 = new System.Windows.Forms.Button();
-            this.userKey3 = new System.Windows.Forms.Button();
-            this.userKey4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -59,7 +55,7 @@
             this.playerAmountBox.Location = new System.Drawing.Point(241, 64);
             this.playerAmountBox.Name = "playerAmountBox";
             this.playerAmountBox.Size = new System.Drawing.Size(121, 21);
-            this.playerAmountBox.TabIndex = 0;
+            this.playerAmountBox.TabIndex = 6;
             // 
             // playerLabel
             // 
@@ -75,16 +71,17 @@
             this.setPlayersButton.Location = new System.Drawing.Point(241, 91);
             this.setPlayersButton.Name = "setPlayersButton";
             this.setPlayersButton.Size = new System.Drawing.Size(121, 23);
-            this.setPlayersButton.TabIndex = 2;
+            this.setPlayersButton.TabIndex = 7;
             this.setPlayersButton.Text = "Set amount of players";
             this.setPlayersButton.UseVisualStyleBackColor = true;
+            this.setPlayersButton.Click += new System.EventHandler(this.setPlayersButton_Click);
             // 
             // startButton
             // 
             this.startButton.Location = new System.Drawing.Point(68, 45);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(149, 69);
-            this.startButton.TabIndex = 3;
+            this.startButton.TabIndex = 8;
             this.startButton.Text = "Start Game";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
@@ -112,7 +109,7 @@
             this.nameChangeButton.Location = new System.Drawing.Point(68, 270);
             this.nameChangeButton.Name = "nameChangeButton";
             this.nameChangeButton.Size = new System.Drawing.Size(98, 49);
-            this.nameChangeButton.TabIndex = 28;
+            this.nameChangeButton.TabIndex = 5;
             this.nameChangeButton.Text = "Change names";
             this.nameChangeButton.UseVisualStyleBackColor = true;
             this.nameChangeButton.Click += new System.EventHandler(this.nameChangeButton_Click);
@@ -122,7 +119,7 @@
             this.nameTextBox4.Location = new System.Drawing.Point(68, 241);
             this.nameTextBox4.Name = "nameTextBox4";
             this.nameTextBox4.Size = new System.Drawing.Size(149, 20);
-            this.nameTextBox4.TabIndex = 27;
+            this.nameTextBox4.TabIndex = 4;
             // 
             // nameLabel3
             // 
@@ -156,93 +153,57 @@
             this.nameTextBox2.Location = new System.Drawing.Point(68, 187);
             this.nameTextBox2.Name = "nameTextBox2";
             this.nameTextBox2.Size = new System.Drawing.Size(149, 20);
-            this.nameTextBox2.TabIndex = 23;
+            this.nameTextBox2.TabIndex = 2;
             // 
             // nameTextBox3
             // 
             this.nameTextBox3.Location = new System.Drawing.Point(68, 215);
             this.nameTextBox3.Name = "nameTextBox3";
             this.nameTextBox3.Size = new System.Drawing.Size(149, 20);
-            this.nameTextBox3.TabIndex = 22;
+            this.nameTextBox3.TabIndex = 3;
             // 
             // nameTextBox1
             // 
             this.nameTextBox1.Location = new System.Drawing.Point(68, 161);
             this.nameTextBox1.Name = "nameTextBox1";
             this.nameTextBox1.Size = new System.Drawing.Size(149, 20);
-            this.nameTextBox1.TabIndex = 21;
+            this.nameTextBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(238, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 31;
-            this.label1.Text = "Key to play with:";
+            this.label1.Text = "Key to play with: 1";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(238, 189);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.Size = new System.Drawing.Size(93, 13);
             this.label3.TabIndex = 32;
-            this.label3.Text = "Key to play with:";
+            this.label3.Text = "Key to play with: =";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(238, 217);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 13);
+            this.label4.Size = new System.Drawing.Size(92, 13);
             this.label4.TabIndex = 33;
-            this.label4.Text = "Key to play with:";
+            this.label4.Text = "Key to play with: z";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(238, 244);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 13);
+            this.label5.Size = new System.Drawing.Size(92, 13);
             this.label5.TabIndex = 34;
-            this.label5.Text = "Key to play with:";
-            // 
-            // userKey1
-            // 
-            this.userKey1.Location = new System.Drawing.Point(331, 154);
-            this.userKey1.Name = "userKey1";
-            this.userKey1.Size = new System.Drawing.Size(75, 25);
-            this.userKey1.TabIndex = 35;
-            this.userKey1.UseVisualStyleBackColor = true;
-            this.userKey1.Click += new System.EventHandler(this.userKey1_Click);
-            // 
-            // userKey2
-            // 
-            this.userKey2.Location = new System.Drawing.Point(331, 183);
-            this.userKey2.Name = "userKey2";
-            this.userKey2.Size = new System.Drawing.Size(75, 25);
-            this.userKey2.TabIndex = 36;
-            this.userKey2.UseVisualStyleBackColor = true;
-            this.userKey2.Click += new System.EventHandler(this.userKey2_Click);
-            // 
-            // userKey3
-            // 
-            this.userKey3.Location = new System.Drawing.Point(331, 211);
-            this.userKey3.Name = "userKey3";
-            this.userKey3.Size = new System.Drawing.Size(75, 25);
-            this.userKey3.TabIndex = 37;
-            this.userKey3.UseVisualStyleBackColor = true;
-            this.userKey3.Click += new System.EventHandler(this.userKey3_Click);
-            // 
-            // userKey4
-            // 
-            this.userKey4.Location = new System.Drawing.Point(331, 237);
-            this.userKey4.Name = "userKey4";
-            this.userKey4.Size = new System.Drawing.Size(75, 24);
-            this.userKey4.TabIndex = 38;
-            this.userKey4.UseVisualStyleBackColor = true;
-            this.userKey4.Click += new System.EventHandler(this.userKey4_Click);
+            this.label5.Text = "Key to play with: /";
             // 
             // label6
             // 
@@ -259,10 +220,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 336);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.userKey4);
-            this.Controls.Add(this.userKey3);
-            this.Controls.Add(this.userKey2);
-            this.Controls.Add(this.userKey1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -308,10 +265,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button userKey1;
-        private System.Windows.Forms.Button userKey2;
-        private System.Windows.Forms.Button userKey3;
-        private System.Windows.Forms.Button userKey4;
         private System.Windows.Forms.Label label6;
     }
 }

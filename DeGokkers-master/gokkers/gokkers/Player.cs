@@ -18,6 +18,7 @@ namespace gokkers
         public ComboBox myComboBox;
         public Label myMoneyLabel;
         public bool hasBet;
+        public PictureBox myPircturebox;
 
         public Player(string name, Label playerLabel, TrackBar myTrackBar, ComboBox myComboBox, Label myMoneyLabel, int cash)
         {
@@ -28,7 +29,11 @@ namespace gokkers
             this.myMoneyLabel = myMoneyLabel;
             this.cash = cash;
         }
-
+        public Player(string name,  PictureBox myPicturebox)
+        {
+            this.name = name;
+            this.myPircturebox = myPicturebox;
+        }
         public void UpdateLabels()
         {
             this.myLabel.Text = this.name;

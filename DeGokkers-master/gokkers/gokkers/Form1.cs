@@ -114,7 +114,6 @@ namespace gokkers
                 }
             }
         }
-
         public static string generateName()
         {
             Random r = new Random();

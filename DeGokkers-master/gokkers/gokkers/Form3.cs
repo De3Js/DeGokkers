@@ -29,38 +29,7 @@ namespace gokkers
             }
             Start();
         }
-        public void setKey1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(userKey1.Text))
-            {
-                keyChar = e.KeyChar.ToString();
-                userKey1.Text = keyChar;
-            }
-        }
-        public void setKey2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(userKey1.Text))
-            {
-                keyChar = e.KeyChar.ToString();
-                userKey2.Text = keyChar;
-            }
-        }
-        public void setKey3_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(userKey1.Text))
-            {
-                keyChar = e.KeyChar.ToString();
-                userKey3.Text = keyChar;
-            }
-        }
-        public void setKey4_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(userKey1.Text))
-            {
-                keyChar = e.KeyChar.ToString();
-                userKey4.Text = keyChar;
-            }
-        }
+        
         public void Start()
         {
             amountBoxFiller();
@@ -168,7 +137,7 @@ namespace gokkers
             {
                 if (names[0] != null)
                 {
-                    Program.SetNextForm(new Form4());
+                    Program.SetNextForm(new Form4(names, playerAmount));
                     this.Close();
                 }
                 else
@@ -180,7 +149,7 @@ namespace gokkers
             {
                 if (names[0] != null && names[1] != null)
                 {
-                    Program.SetNextForm(new Form4());
+                    Program.SetNextForm(new Form4(names, playerAmount));
                     this.Close();
                 }
                 else
@@ -192,7 +161,7 @@ namespace gokkers
             {
                 if (names[0] != null && names[1] != null && names[2] != null)
                 {
-                    Program.SetNextForm(new Form4());
+                    Program.SetNextForm(new Form4(names, playerAmount));
                     this.Close();
                 }
                 else
@@ -204,7 +173,7 @@ namespace gokkers
             {
                 if (names[0] != null && names[1] != null && names[2] != null && names[3] != null)
                 {
-                    Program.SetNextForm(new Form4());
+                    Program.SetNextForm(new Form4(names, playerAmount));
                     this.Close();
                 }
                 else
@@ -216,33 +185,58 @@ namespace gokkers
 
         public void amountBoxFiller()
         {
-            playerAmountBox.Items.Add(1);
             playerAmountBox.Items.Add(2);
             playerAmountBox.Items.Add(3);
             playerAmountBox.Items.Add(4);
-            playerAmountBox.SelectedIndex = 3;
+            playerAmountBox.SelectedIndex = 2;
         }
 
-        private void userKey1_Click(object sender, EventArgs e)
+        private void setPlayersButton_Click(object sender, EventArgs e)
         {
-            this.KeyPress +=
-                new KeyPressEventHandler(setKey1_KeyPress);
-            
+            playerAmount = Convert.ToInt32(playerAmountBox.Text);
+            amountChecker();
         }
-        private void userKey2_Click(object sender, EventArgs e)
+        public void amountChecker()
         {
-            this.KeyPress +=
-                new KeyPressEventHandler(setKey2_KeyPress);
-        }
-        private void userKey3_Click(object sender, EventArgs e)
-        {
-            this.KeyPress +=
-                new KeyPressEventHandler(setKey3_KeyPress);
-        }
-        private void userKey4_Click(object sender, EventArgs e)
-        {
-            this.KeyPress +=
-                new KeyPressEventHandler(setKey4_KeyPress);
+            if (playerAmount == 4)
+            {
+                nameLabel1.Show();
+                nameTextBox1.Show();
+                nameLabel2.Show();
+                nameTextBox2.Show();
+                nameLabel3.Show();
+                nameTextBox3.Show();
+                nameLabel4.Show();
+                nameTextBox4.Show();
+                label4.Show();
+                label5.Show();
+            }
+            if (playerAmount < 4)
+            {
+                nameLabel1.Show();
+                nameTextBox1.Show();
+                nameLabel2.Show();
+                nameTextBox2.Show();
+                nameLabel3.Show();
+                nameTextBox3.Show();
+                nameLabel4.Hide();
+                nameTextBox4.Hide();
+                label4.Show();
+                label5.Hide();
+                if (playerAmount < 3)
+                {
+                    nameLabel1.Show();
+                    nameTextBox1.Show();
+                    nameLabel2.Show();
+                    nameTextBox2.Show();
+                    nameLabel3.Hide();
+                    nameTextBox3.Hide();
+                    nameLabel4.Hide();
+                    nameTextBox4.Hide();
+                    label4.Hide();
+                    label5.Hide();
+                }
+            }
         }
     }
 }
