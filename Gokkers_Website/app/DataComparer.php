@@ -19,7 +19,7 @@ class DataComparer
 
     function Compare()
     {
-        $stmt = $this->dbc->prepare("SELECT * FROM users WHERE username=:username LIMIT 1");
+        $stmt = $this->dbc->prepare("SELECT * FROM tbl_users WHERE username=:username LIMIT 1");
         $stmt->execute(array(':username'=>$this->username));
         $userRow=$stmt->fetch(\PDO::FETCH_ASSOC);
         if($stmt->rowCount() > 0)

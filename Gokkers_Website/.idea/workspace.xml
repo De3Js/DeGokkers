@@ -25,13 +25,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataComparer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegisterValidator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/RegisterValidator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="25" column="75" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+              <folding>
+                <marker date="1490108534934" expanded="true" signature="335:403" ph="SELECT COUNT... users" />
+                <marker date="1490108534934" expanded="true" signature="708:770" ph="SELECT COUNT... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSender.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/DataSender.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+              <folding>
+                <marker date="1490108585672" expanded="true" signature="888:937" ph="INSERT INTO users... " />
+                <marker date="1490108585672" expanded="true" signature="888:939" ph="INSERT INTO users... " />
+                <marker date="1490108585672" expanded="true" signature="888:1015" ph="INSERT INTO users... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataComparer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/DataComparer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="326">
+              <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="60" />
               <folding>
-                <marker date="1490106929795" expanded="true" signature="381:433" ph="SELECT * FRO... users" />
+                <marker date="1490108534914" expanded="true" signature="381:437" ph="SELECT * FRO... tbl_users" />
               </folding>
             </state>
           </provider>
@@ -42,6 +69,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseConnector.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/DatabaseConnector.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -75,11 +112,11 @@
         <option value="$PROJECT_DIR$/app/DataReceiver.php" />
         <option value="$PROJECT_DIR$/app/DatabaseConnector.php" />
         <option value="C:/wamp/www/vht_php/vht4/app/newsletterManager.php" />
-        <option value="$PROJECT_DIR$/app/RegisterValidator.php" />
-        <option value="$PROJECT_DIR$/app/DataSender.php" />
         <option value="$PROJECT_DIR$/app/RegisterManager.php" />
         <option value="$PROJECT_DIR$/app/LoginManager.php" />
         <option value="$PROJECT_DIR$/app/DataComparer.php" />
+        <option value="$PROJECT_DIR$/app/RegisterValidator.php" />
+        <option value="$PROJECT_DIR$/app/DataSender.php" />
       </list>
     </option>
   </component>
@@ -236,12 +273,12 @@
       <workItem from="1490011683026" duration="11944000" />
       <workItem from="1490084739379" duration="63000" />
       <workItem from="1490097913754" duration="32000" />
-      <workItem from="1490097946506" duration="7267000" />
+      <workItem from="1490097946506" duration="9002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34793000" />
+    <option name="totallyTimeSpent" value="36528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -524,37 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DatabaseConnector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/RegisterValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <marker date="1490102220905" expanded="true" signature="335:399" ph="SELECT COUNT... users" />
-            <marker date="1490102220905" expanded="true" signature="704:762" ph="SELECT COUNT... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataSender.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <marker date="1490102647734" expanded="true" signature="888:933" ph="INSERT INTO users... " />
-            <marker date="1490102647734" expanded="true" signature="888:935" ph="INSERT INTO users... " />
-            <marker date="1490102647734" expanded="true" signature="888:1011" ph="INSERT INTO users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -571,10 +577,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/RegisterManager.php">
+    <entry file="file://$PROJECT_DIR$/app/DataComparer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="56" />
+        <state relative-caret-position="326">
+          <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="60" />
+          <folding>
+            <marker date="1490108534914" expanded="true" signature="381:437" ph="SELECT * FRO... tbl_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DatabaseConnector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -587,12 +603,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataComparer.php">
+    <entry file="file://$PROJECT_DIR$/app/RegisterManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="418">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/RegisterValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="75" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
           <folding>
-            <marker date="1490106929795" expanded="true" signature="381:433" ph="SELECT * FRO... users" />
+            <marker date="1490108534934" expanded="true" signature="335:403" ph="SELECT COUNT... users" />
+            <marker date="1490108534934" expanded="true" signature="708:770" ph="SELECT COUNT... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataSender.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding>
+            <marker date="1490108585672" expanded="true" signature="888:937" ph="INSERT INTO users... " />
+            <marker date="1490108585672" expanded="true" signature="888:939" ph="INSERT INTO users... " />
+            <marker date="1490108585672" expanded="true" signature="888:1015" ph="INSERT INTO users... " />
           </folding>
         </state>
       </provider>
