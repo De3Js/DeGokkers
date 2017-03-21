@@ -16,5 +16,5 @@ else
 {
     $message = "Login failed";
 }
-header("location: ../public/test.php?message=$message");
+header("location: ../public/index.php?message=$message");
 ?>

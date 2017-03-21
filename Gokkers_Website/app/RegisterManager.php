@@ -17,4 +17,4 @@ else
 {
     $message = "Something went wrong, please try again.";
 }
-header("location: ../public/test.php?message=$message");
+header("location: ../public/index.php?message=$message");
