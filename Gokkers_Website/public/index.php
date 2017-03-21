@@ -67,16 +67,11 @@
           <h3>Login</h3>
             <!-- login field -->
           <form class="loginform" id="login" action="login.php" method="post" accept-charset="UTF-8">
-            <!-- login label username -->
-            <label class="formlabel" for="Username">Username*:</label>
-            <!-- login input username -->
-            <input class="forminput" type="text" placeholder="Username" name="username"  maxlength="50" required />
-            <!-- login label password -->
-            <label class="formlabel" for="password">Password*:</label>
-            <!-- login input password -->
-            <input class="forminput" type="password" placeholder="Password" name="password" id="password" maxlength="50"/>
-            <!-- login input summit -->
-            <input class="formsubmit" type="submit" name="Submit" value="Submit">
+              <label class="formlabel" for="username">Username: </label>
+              <input class="forminput" placeholder="Username" name="username" type="text" id="username">
+              <label class="formlabel" for="password">Password: </label>
+              <input class="forminput" placeholder="Password" name="password" type="password" id="password">
+              <input class="formsubmit" type="submit" value="Submit">
           </form>
         </div>
         <div class="registerfield" id="register">
