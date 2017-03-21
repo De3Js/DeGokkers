@@ -1,9 +1,8 @@
 <?php
 namespace App;
 
-use mysqli;
-include ("databaseConnector.php");
-
+require_once("DatabaseConnector.php");
+require_once("RegisterValidator.php");
 
 class dataSender
 {
@@ -11,6 +10,7 @@ class dataSender
     private $email;
     private $password;
     private $dbc;
+    private $validator;
 
     public function __construct($username, $email, $password, $confirmPassword)
     {
@@ -19,16 +19,20 @@ class dataSender
         $this->email = $email;
         $this->password = $password;
         $this->confirmPassword = $confirmPassword;
+        $this->validator = new DataValidator();
     }
 
     public function Send()
     {
-        if ($this->password == $this->confirmPassword)
+        $errorMessage = $this->validator->Validate($this->email, $this->username, $this->password, $this->confirmPassword, $this->dbc);
+        if ($errorMessage == "Succesfully Registered")
         {
-            $sql = "INSERT INTO users (username, email, password)"
-                . "VALUES ('$this->username', '$this->email', '$this->password')";
-            mysqli_query($this->dbc,$sql);
+            $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
+        $sql = "INSERT INTO users (username, email, password)"
+            . "VALUES ('$this->username', '$this->email', '$hashedPassword')";
+        $this->dbc->query($sql);
         }
-        header("location:../public/test.php");
+
+        return $errorMessage;
     }
 }

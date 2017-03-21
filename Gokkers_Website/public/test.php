@@ -13,9 +13,19 @@
             <label for="email">Email: </label>
             <input name="email" id="email">
             <label for="password">Password: </label>
-            <input name="password" type="text" id="password">
+            <input name="password" type="password" id="password">
             <label for="confirmPassword">Confirm password: </label>
-            <input name="confirmPassword" type="text" id="confirmPassword">
+            <input name="confirmPassword" type="password" id="confirmPassword">
+        </div>
+        <input type="submit" value="submit">
+    </form>
+    <h1>Login:</h1>
+    <form action="../app/LoginManager.php">
+        <div class="form-group">
+            <label for="username">Username: </label>
+            <input name="username" type="text" id="username">
+            <label for="password">Password: </label>
+            <input name="password" type="password" id="password">
         </div>
         <input type="submit" value="submit">
     </form>
