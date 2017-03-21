@@ -1,7 +1,182 @@
+@import "sass-color/colors.sass"
+
+
+h1, h2, h3, h4, h5, h6, p, li,a
+  color: $text-color
+body
+  margin: 0px
+  padding: 0px
 
 .wrapper
-  width: 1170px
-  color: red
+  margin: 0 auto
   display: flex
+  width: 1170px
   justify-content: center
-    
+
+nav .wrapper
+  display: flex
+  justify-content: space-between
+nav
+  width: 100%
+  background-color: $background-color-one
+  ul
+    display: flex
+    flex-direction: row
+    width: 40%
+    flex-wrap: wrap
+    justify-content: space-between
+    li
+      list-style: none
+      text-decoration: none
+      padding: 10px
+      border: solid
+      border-color: $border-color
+      // border-radius: 7px
+      a
+        display: flex
+        text-decoration: none
+        justify-content: space-between
+        font-size: 1em
+.hero
+  background-color: $background-color-two
+  padding: 100px
+
+.features
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  background-color: $background-color-one
+  padding: 50px
+  h2
+    display: flex
+    flex-direction: row
+  .smasher
+    width: 50%
+    border-right: 3px solid
+    border-color: $border-color
+    h3
+      display: flex
+      justify-content: center
+    p
+      padding-top: 20px
+      display: flex
+      text-align: center
+      font-size: 1.5em
+      flex-wrap: wrap
+  .simulator
+    width: 50%
+    h3
+      display: flex
+      margin-left: 20px
+      justify-content: center
+    p
+      margin-left: 20px
+      padding-top: 20px
+      display: flex
+      text-align: center
+      font-size: 1.5em
+      flex-wrap: wrap
+.login
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  background-color: $background-color-two
+  padding: 50px
+  h3
+    flex-direction: row
+    font-size: 1.5em
+  .loginfield
+    margin-top: 20px
+    border-right: 3px solid
+    border-color: $border-color
+    width: 50%
+    h3
+      display: flex
+      justify-content: center
+
+    .loginform
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-left: 15px
+      .formlabel
+        color: #fff
+        font-size: 1.4em
+      .forminput
+        margin-top: 10px
+        width: 300px
+        height: 25px
+        border-radius: 5px
+        font-size: 1.2em
+      .formsubmit
+        margin-top: 20px
+        width: 200px
+        height: 30px
+        border-radius: 5px
+  .registerfield
+    width: 50%
+    margin-top: 20px
+    h3
+      display: flex
+      justify-content: center
+    .registerform
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-left: 15px
+      .formlabel
+        color: #fff
+        font-size: 1.4em
+
+      .forminput
+        margin-top: 10px
+        width: 300px
+        height: 25px
+        border-radius: 5px
+        font-size: 1.2em
+
+      .formsubmit
+        margin-top: 20px
+        width: 200px
+        height: 30px
+        border-radius: 5px
+        display: flex
+        justify-content: center
+.promote
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  background-color: $background-color-one
+  padding: 50px
+  h2
+    flex-direction: row
+  .videoplayer
+    width: 640px
+    h3
+      display: flex
+      justify-content: center
+
+    iframe
+      margin-top: 20px
+      width: 640px
+      height: 360px
+
+.download
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  background-color: $background-color-two
+  padding: 50px
+  .download_content
+    margin: 30px
+    display: flex
+    align-items: center
+    a
+      text-decoration: none
+      border: 4px solid $border-color
+      border-radius: 7px
+      padding: 20px
+      font-size: 3em
+      width: 300
+      height: 100
+      background-color: none
