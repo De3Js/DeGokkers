@@ -13,7 +13,7 @@ class DataValidator
     {
         if ($password == $confirmPassword)
         {
-            $sql = $dbc->prepare("SELECT COUNT(*) AS `total` FROM users WHERE username = :username");
+            $sql = $dbc->prepare("SELECT COUNT(*) AS `total` FROM tbl_users WHERE username = :username");
             $sql->execute([':username' => $username]);
             $result = $sql->fetchAll();
 
@@ -23,7 +23,7 @@ class DataValidator
                 return $errorMessage;
             }
 
-            $sql = $dbc->prepare("SELECT COUNT(*) AS `total` FROM users WHERE email = :email");
+            $sql = $dbc->prepare("SELECT COUNT(*) AS `total` FROM tbl_users WHERE email = :email");
             $sql->execute([':email' => $email]);
             $result = $sql->fetchAll();
 

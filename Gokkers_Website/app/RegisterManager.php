@@ -3,12 +3,12 @@ namespace App;
 
 require_once("DataSender.php");
 
-if (isset($_GET["email"], $_GET["username"], $_GET["password"], $_GET["confirmPassword"]) && filter_var($_GET["email"], FILTER_VALIDATE_EMAIL))
+if (isset($_POST["email"], $_POST["username"], $_POST["password"], $_POST["confirmPassword"]) && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))
 {
-    $username = $_GET["username"];
-    $email = $_GET["email"];
-    $password = $_GET["password"];
-    $confirmPassword = $_GET["confirmPassword"];
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $confirmPassword = $_POST["confirmPassword"];
     $validator = new DataValidator();
     $sender = new DataSender($username, $email, $password, $confirmPassword);
     $message = $sender->Send();

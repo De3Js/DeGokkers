@@ -3,10 +3,11 @@ namespace App;
 
 require_once("DataComparer.php");
 
-if (isset($_GET["username"], $_GET["password"]))
+
+if (isset($_POST["username"], $_POST["password"]))
 {
-    $username = $_GET["username"];
-    $password = $_GET["password"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
     $dataComaparer = new DataComparer($username, $password);
     $message = $dataComaparer->Compare();

@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Register here:</h1>
-    <form action="../app/RegisterManager.php">
+    <form action="../app/RegisterManager.php" method="post">
         <div class="form-group">
             <label for="username">Username: </label>
             <input name="username" type="text" id="username">
@@ -20,7 +20,7 @@
         <input type="submit" value="submit">
     </form>
     <h1>Login:</h1>
-    <form action="../app/LoginManager.php">
+    <form action="../app/LoginManager.php" method="post">
         <div class="form-group">
             <label for="username">Username: </label>
             <input name="username" type="text" id="username">

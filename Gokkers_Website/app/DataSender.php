@@ -28,7 +28,7 @@ class dataSender
         if ($errorMessage == "Succesfully Registered")
         {
             $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO users (username, email, password)"
+        $sql = "INSERT INTO tbl_users (username, email, password)"
             . "VALUES ('$this->username', '$this->email', '$hashedPassword')";
         $this->dbc->query($sql);
         }
