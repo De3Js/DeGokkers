@@ -109,14 +109,34 @@
         </div>
       </div>
     </div>
-    <div class="download">
-      <h2>DOWNLOAD</h2>
-      <div class="wrapper">
-        <div class="download_content">
-           <a href="game" download> download</a>
-        </div>
-      </div>
-    </div>
+
+    <?php
+    if ( isset($_GET["message"]))
+    {
+        if ($_GET["message"] == "Succesfully logged in.")
+        {
+            echo "<div class=\"download\">";
+            echo "<h2>DOWNLOAD</h2>";
+            echo "<div class=\"wrapper\">";
+            echo "<div class=\"download_content\">";
+            echo "<a href=\"game\" download> download</a>";
+            echo "</div>";
+            echo "</div>";
+            echo "</div>";
+        }
+    }
+    else
+    {
+        echo "<div class=\"download\">";
+        echo "<h2>DOWNLOAD</h2>";
+        echo "<div class=\"wrapper\">";
+        echo "<div class=\"download_content\">";
+        echo "<p> You must be logged in to download.</p>";
+        echo "</div>";
+        echo "</div>";
+        echo "</div>";
+    }
+    ?>
     <footer>
       <div class="footer_content">
         <div class="footer_namen">
