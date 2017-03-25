@@ -66,7 +66,7 @@
         <div class="loginfield">
           <h3>Login</h3>
             <!-- login field -->
-          <form class="loginform" id="login" action="login.php" method="post" accept-charset="UTF-8">
+          <form class="loginform" id="login" action="../app/LoginManager.php    " method="post" accept-charset="UTF-8">
               <label class="formlabel" for="username">Username: </label>
               <input class="forminput" placeholder="Username" name="username" type="text" id="username">
               <label class="formlabel" for="password">Password: </label>
