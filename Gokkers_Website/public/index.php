@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -64,9 +67,15 @@
       <h2>LOGIN / REGISTER</h2>
       <div class="wrapper">
         <div class="loginfield">
+            <?php
+            if ( isset($_SESSION["error"]))
+            {
+                echo "<h2>" . $_SESSION["error"] . "</h2>";
+            }
+            ?>
           <h3>Login</h3>
             <!-- login field -->
-          <form class="loginform" id="login" action="../app/LoginManager.php    " method="post" accept-charset="UTF-8">
+          <form class="loginform" id="login" action="../app/LoginManager.php" method="post" accept-charset="UTF-8">
               <label class="formlabel" for="username">Username: </label>
               <input class="forminput" placeholder="Username" name="username" type="text" id="username">
               <label class="formlabel" for="password">Password: </label>
@@ -110,33 +119,29 @@
       </div>
     </div>
 
-    <?php
-    if ( isset($_GET["message"]))
-    {
-        if ($_GET["message"] == "Succesfully logged in.")
-        {
-            echo "<div class=\"download\">";
-            echo "<h2>DOWNLOAD</h2>";
-            echo "<div class=\"wrapper\">";
-            echo "<div class=\"download_content\">";
-            echo "<a href=\"game\" download> download</a>";
-            echo "</div>";
-            echo "</div>";
-            echo "</div>";
-        }
-    }
-    else
-    {
-        echo "<div class=\"download\">";
-        echo "<h2>DOWNLOAD</h2>";
-        echo "<div class=\"wrapper\">";
-        echo "<div class=\"download_content\">";
-        echo "<p> You must be logged in to download.</p>";
-        echo "</div>";
-        echo "</div>";
-        echo "</div>";
-    }
-    ?>
+    <div class="download">
+        <h2>DOWNLOAD</h2>
+        <div class="wrapper">
+            <div class="download_content">
+                <?php
+                if (isset($_SESSION["logged"]))
+                {
+                    if ($_SESSION["logged"] == true) {
+                        echo "<a href=\"game\" download> download</a>";
+                    }
+                    else
+                    {
+                        echo "<p> You must be logged in to download.</p>";
+                    }
+                }
+                else
+                {
+                    echo "<p> You must be logged in to download.</p>";
+                }
+                ?>
+            </div>
+        </div>
+    </div>
     <footer>
       <div class="footer_content">
         <div class="footer_namen">

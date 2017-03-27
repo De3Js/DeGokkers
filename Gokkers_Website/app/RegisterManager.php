@@ -1,7 +1,8 @@
 <?php
 namespace App;
-
 require_once("DataSender.php");
+
+session_start();
 
 if (isset($_POST["email"], $_POST["username"], $_POST["password"], $_POST["confirmPassword"]) && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))
 {
