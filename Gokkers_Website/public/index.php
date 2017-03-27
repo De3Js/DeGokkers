@@ -71,6 +71,7 @@ session_start();
             if ( isset($_SESSION["error"]))
             {
                 echo "<h2>" . $_SESSION["error"] . "</h2>";
+                unset($_SESSION["error"]);
             }
             ?>
           <h3>Login</h3>
@@ -84,6 +85,13 @@ session_start();
           </form>
         </div>
         <div class="registerfield" id="register">
+            <?php
+            if ( isset($_SESSION["reg_error"]))
+            {
+                echo "<h2>" . $_SESSION["reg_error"] . "</h2>";
+                unset($_SESSION["reg_error"]);
+            }
+            ?>
           <h3>Register</h3>
             <!-- register field -->
           <form class="registerform" <id="register" action="../app/RegisterManager.php" method="post" enctype="multipart/form-data" autocomplete="off">

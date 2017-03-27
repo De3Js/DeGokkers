@@ -15,25 +15,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gokkers_Website/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="126" column="20" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+            <state relative-caret-position="-154">
+              <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
               <folding>
-                <marker date="1490620411084" expanded="true" signature="1809:1897" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="1852:1897" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="2638:3086" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="3151:4677" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="4739:4977" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="4792:4966" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="4826:4953" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="5708:6197" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="5743:6183" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="5778:5931" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="5793:5916" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="5996:6170" ph="..." />
-                <marker date="1490620411084" expanded="true" signature="6011:6155" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="1809:1897" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="1852:1897" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="2681:3129" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="3194:4940" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="5002:5240" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="5055:5229" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="5089:5216" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="5971:6460" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="6006:6446" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="6041:6194" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="6056:6179" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="6259:6433" ph="..." />
+                <marker date="1490620892990" expanded="true" signature="6274:6418" ph="..." />
               </folding>
             </state>
           </provider>
@@ -61,15 +61,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterValidator.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gokkers_Website/app/RegisterValidator.php">
+      <file leaf-file-name="RegisterManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gokkers_Website/app/RegisterManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-              <folding>
-                <marker date="1490108534934" expanded="true" signature="335:403" ph="SELECT COUNT... tbl_users" />
-                <marker date="1490108534934" expanded="true" signature="708:770" ph="SELECT COUNT... tbl_users" />
-              </folding>
+            <state relative-caret-position="440">
+              <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -239,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490614523988</updated>
-      <workItem from="1490614525177" duration="4297000" />
+      <workItem from="1490614525177" duration="4788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4297000" />
+    <option name="totallyTimeSpent" value="4788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -280,32 +277,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gokkers_Website/app/RegisterManager.php">
+    <entry file="file://$PROJECT_DIR$/Gokkers_Website/app/RegisterValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gokkers_Website/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="126" column="20" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+        <state relative-caret-position="484">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
           <folding>
-            <marker date="1490620411084" expanded="true" signature="1809:1897" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="1852:1897" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="2638:3086" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="3151:4677" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="4739:4977" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="4792:4966" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="4826:4953" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="5708:6197" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="5743:6183" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="5778:5931" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="5793:5916" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="5996:6170" ph="..." />
-            <marker date="1490620411084" expanded="true" signature="6011:6155" ph="..." />
+            <marker date="1490108534934" expanded="true" signature="335:403" ph="SELECT COUNT... tbl_users" />
+            <marker date="1490108534934" expanded="true" signature="708:770" ph="SELECT COUNT... tbl_users" />
           </folding>
         </state>
       </provider>
@@ -314,6 +292,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gokkers_Website/app/RegisterManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -328,13 +314,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gokkers_Website/app/RegisterValidator.php">
+    <entry file="file://$PROJECT_DIR$/Gokkers_Website/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        <state relative-caret-position="-154">
+          <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
           <folding>
-            <marker date="1490108534934" expanded="true" signature="335:403" ph="SELECT COUNT... tbl_users" />
-            <marker date="1490108534934" expanded="true" signature="708:770" ph="SELECT COUNT... tbl_users" />
+            <marker date="1490620892990" expanded="true" signature="1809:1897" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="1852:1897" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="2681:3129" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="3194:4940" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="5002:5240" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="5055:5229" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="5089:5216" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="5971:6460" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="6006:6446" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="6041:6194" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="6056:6179" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="6259:6433" ph="..." />
+            <marker date="1490620892990" expanded="true" signature="6274:6418" ph="..." />
           </folding>
         </state>
       </provider>

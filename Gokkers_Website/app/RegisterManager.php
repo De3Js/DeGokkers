@@ -13,9 +13,11 @@ if (isset($_POST["email"], $_POST["username"], $_POST["password"], $_POST["confi
     $validator = new DataValidator();
     $sender = new DataSender($username, $email, $password, $confirmPassword);
     $message = $sender->Send();
+    $_SESSION["reg_error"] = $message;
 }
 else
 {
     $message = "Something went wrong, please try again.";
+    $_SESSION["reg_error"] = $message;
 }
-header("location: ../public/index.php?message=$message");
+header("location: ../public/index.php");
