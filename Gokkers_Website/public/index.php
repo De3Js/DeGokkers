@@ -8,17 +8,17 @@ session_start();
     <title>DeGokkers</title>
     <meta name="description" content="">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/normal.css"
-    <link rel="stylesheet" href="css/sassnormal.min.css">
+    <link rel="stylesheet" href="Css/normal.css">
   </head>
   <body>
     <nav>
       <div class="wrapper">
-          <img src="" alt="">
+          <img src="/images/degokkers_logo.php" alt="gokkerslogo">
           <ul>
             <li><a href="#hero">HOME</a></li>
             <li><a href="#features">FEATURES</a></li>
             <li><a href="#login">LOGIN/REGISTER</a></li>
+            <li><a href="#download">DOWNLOAD</a></li>
             <li><a href="#promote">PROMOTE</a></li>
           </ul>
       </div>
@@ -26,22 +26,22 @@ session_start();
     <div class="hero" id="hero">
       <div class="wrapper">
         <div class="slider_images">
-          
+          <img class="Slides" src="Images/slide1.JPG" alt="slide1">
+          <img class="Slides" src="Images/slide2.JPG" alt="slide1">
         </div>
         <script>
           var myIndex = 0;
           carousel();
-
           function carousel() {
               var i;
-              var x = document.getElementsByClassName("mySlides");
+              var x = document.getElementsByClassName("Slides");
               for (i = 0; i < x.length; i++) {
                  x[i].style.display = "none";
               }
               myIndex++;
               if (myIndex > x.length) {myIndex = 1}
               x[myIndex-1].style.display = "block";
-              setTimeout(carousel, 3000); // Change image every 2 seconds
+              setTimeout(carousel, 5000); // Change image every 5 seconds
           }
         </script>
       </div>
@@ -151,21 +151,23 @@ session_start();
         </div>
     </div>
     <footer>
-      <div class="footer_content">
-        <div class="footer_namen">
-          <ul>
-            <li>Jean Pierre Slimmen</li>
-            <li>Joost Lont</li>
-            <li>Joey Oonincx</li>
-          </ul>
-        </div>
-        <img src="" alt="">
-        <div class="footer_contact">
-          <ul>
-            <li>jpslimmen@gmail.com</li>
-            <li>Joost.lont@xs4all.nl</li>
-            <li>Joeyoonincx@hotmail.com</li>
-          </ul>
+      <div class="wrapper">
+        <div class="footer_content">
+          <div class="footer_namen">
+            <ul>
+              <li>Jean Pierre Slimmen</li>
+              <li>Joost Lont</li>
+              <li>Joey Oonincx</li>
+            </ul>
+          </div>
+          <img src="" alt="">
+          <div class="footer_contact">
+            <ul>
+              <li>jpslimmen@gmail.com</li>
+              <li>Joost.lont@xs4all.nl</li>
+              <li>Joeyoonincx@hotmail.com</li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
