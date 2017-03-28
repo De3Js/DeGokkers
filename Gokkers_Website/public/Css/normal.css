@@ -10,26 +10,31 @@ body {
 .wrapper {
   margin: 0 auto;
   display: flex;
-  width: 1170px;
+  width: 80%;
   justify-content: center;
 }
 
 nav .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav {
-  width: 100%;
   background-color: #1c1c52;
   justify-content: space-between;
+  padding: 10px;
+}
+
+nav img {
+  width: 100px;
+  height: 100px;
 }
 
 nav ul {
   display: flex;
-  width: 50%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav ul li {
@@ -38,6 +43,7 @@ nav ul li {
   padding: 10px;
   border: solid;
   border-color: #ffb200;
+  margin: 5px;
 }
 
 nav ul li a {
@@ -50,6 +56,11 @@ nav ul li a {
 .hero {
   background-color: #242565;
   padding: 100px;
+}
+
+.hero .slider_images img {
+  width: 100%;
+  height: auto;
 }
 
 .features {
@@ -218,8 +229,8 @@ nav ul li a {
 
 .promote .videoplayer iframe {
   margin-top: 20px;
-  width: 640px;
-  height: 360px;
+  width: 100%;
+  height: 320px;
 }
 
 .download {
@@ -250,14 +261,29 @@ nav ul li a {
 footer {
   background-color: #1c1c52;
   padding: 50;
+  width: 100%;
 }
 
 footer .footer_content {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+footer .footer_content img {
+  width: 100px;
+  height: 100px;
 }
 
 footer .footer_content li {
   list-style: none;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1070px) {
+  .hero_content h2 {
+    font-size: 2em;
+  }
 }
