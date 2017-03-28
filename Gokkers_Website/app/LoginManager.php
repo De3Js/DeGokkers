@@ -1,30 +1,19 @@
 <?php
 namespace App;
+
 session_start();
 require_once("DataComparer.php");
 
-if (isset($_POST["username"], $_POST["password"]))
+if ($_SERVER['REQUEST_METHOD'] == 'GET')
 {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    $dataComparer = new DataComparer($username, $password);
-    $message = $dataComparer->Compare();
+    session_destroy();
+    header("location: ../public/index.php");
+}
 
-    if ($message == "Succesfully logged in.")
-    {
-        $_SESSION["logged"]=true;
-    }
-    else
-    {
-        $_SESSION["logged"]=false;
-    }
-    $_SESSION["error"]=$message;
-}
-else
-{
-    $message = "Login failed";
-    $_SESSION["logged"]=false;
-    $_SESSION["error"]=$message;
-}
-header("location: ../public/index.php");
+$username = $_POST["username"];
+$password = $_POST["password"];
+$DataComparer = new DataComparer($username, $password);
+$DataComparer->Compare();
+
+header("location: ../public/index.php")
 ?>

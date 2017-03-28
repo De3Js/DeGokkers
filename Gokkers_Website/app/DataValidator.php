@@ -1,19 +1,18 @@
 <?php
-
 namespace App;
 
 require_once("DatabaseConnector.php");
-require_once ("../config/databaseConfig.php");
-
+require_once("../config/databaseConfig.php");
 
 class DataValidator
 {
-    public $errorMessage;
+    private $errorMessage;
+
     public function Validate($email, $username, $password, $confirmPassword, $dbc)
     {
         if ($password == $confirmPassword)
         {
-            $sql = $dbc->prepare("SELECT COUNT(*) AS `total` FROM tbl_users WHERE username = :username");
+            $sql = $dbc->prepare("SELECT COUNT(*) AS `total` FROM `tbl_users` WHERE `username` = `:username`");
             $sql->execute([':username' => $username]);
             $result = $sql->fetchAll();
 
@@ -23,7 +22,7 @@ class DataValidator
                 return $errorMessage;
             }
 
-            $sql = $dbc->prepare("SELECT COUNT(*) AS `total` FROM tbl_users WHERE email = :email");
+            $sql = $dbc->prepare("SELECT COUNT(*) AS `total` FROM `tbl_users` WHERE `email` = `:email`");
             $sql->execute([':email' => $email]);
             $result = $sql->fetchAll();
 
