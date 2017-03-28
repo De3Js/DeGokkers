@@ -122,7 +122,7 @@ session_start();
       <div class="wrapper">
         <div class="videoplayer">
           <h3>PROMOTIE VIDEO</h3>
-          <iframe src="https://www.youtube.com/watch?v=e7usHTy8J-g"></iframe>
+          <iframe src="https://www.youtube.com/embed/mPo4W-35-js"></iframe>
         </div>
       </div>
     </div>
@@ -153,21 +153,17 @@ session_start();
     <footer>
       <div class="wrapper">
         <div class="footer_content">
-          <div class="footer_namen">
             <ul>
               <li>Jean Pierre Slimmen</li>
               <li>Joost Lont</li>
               <li>Joey Oonincx</li>
             </ul>
-          </div>
-          <img src="Images/degokkers_logo.png" alt="gokkers-logo">
-          <div class="footer_contact">
+            <img src="Images/degokkers_logo.png" alt="gokkers-logo">
             <ul>
               <li>jpslimmen@gmail.com</li>
               <li>Joost.lont@xs4all.nl</li>
               <li>Joeyoonincx@hotmail.com</li>
             </ul>
-          </div>
         </div>
       </div>
     </footer>
