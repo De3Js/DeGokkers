@@ -20,6 +20,15 @@ session_start();
             <li><a href="#login">LOGIN/REGISTER</a></li>
             <li><a href="#download">DOWNLOAD</a></li>
             <li><a href="#promote">PROMOTE</a></li>
+              <?php
+              if (isset($_SESSION["logged"]))
+              {
+                  if ($_SESSION["logged"] == true)
+                  {
+                      echo "<li><a href=\"../app/LoginManager.php\">LOGOUT</a></li>";
+                  }
+              }
+              ?>
           </ul>
       </div>
     </nav>

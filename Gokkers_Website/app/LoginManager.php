@@ -1,6 +1,5 @@
 <?php
 namespace App;
-
 session_start();
 require_once("DataComparer.php");
 
