@@ -280,6 +280,7 @@ footer .footer_content {
 footer .footer_content img {
   width: 100px;
   height: 100px;
+  margin: 20px;
 }
 
 footer .footer_content li {
