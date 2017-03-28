@@ -172,6 +172,11 @@ nav ul li a {
   margin-top: 20px;
 }
 
+.login .registerfield h2 {
+  display: flex;
+  justify-content: center;
+}
+
 .login .registerfield h3 {
   display: flex;
   justify-content: center;

@@ -88,9 +88,9 @@ session_start();
             <!-- login field -->
           <form class="loginform" id="login" action="../app/LoginManager.php" method="post" accept-charset="UTF-8">
               <label class="formlabel" for="username">Username: </label>
-              <input class="forminput" placeholder="Username" name="username" type="text" id="username">
+              <input class="forminput" placeholder="Username" name="username" type="text" id="username" required>
               <label class="formlabel" for="password">Password: </label>
-              <input class="forminput" placeholder="Password" name="password" type="password" id="password">
+              <input class="forminput" placeholder="Password" name="password" type="password" id="password" required>
               <input class="formsubmit" type="submit" value="Submit">
           </form>
         </div>
@@ -116,15 +116,15 @@ session_start();
             <!-- register label password -->
             <label class="formlabel" for="password">Password*:</label>
             <!-- register input password -->
-            <input class="forminput" type="password" placeholder="Password" name="password" maxlength="50" id="password"/>
+            <input class="forminput" type="password" placeholder="Password" name="password" maxlength="50" id="password" required/>
             <!-- register label password confirmd -->
             <label class="formlabel" for="confirmPassword">Confirm Password*:</label>
             <!-- register input password confirm -->
-            <input class="forminput" type="password" name="confirmPassword" placeholder="Confirm Password" id="confirmPassword" maxlength="50">
+            <input class="forminput" type="password" name="confirmPassword" placeholder="Confirm Password"id="confirmPassword" maxlength="50" required>
             <!-- register label email -->
             <label class="formlabel" for="email">Email*:</label>
             <!-- register input email -->
-            <input class="forminput" type="email" placeholder="Email" name="email" maxlength="50" id="email"/>
+            <input class="forminput" type="email" placeholder="Email" name="email" maxlength="50"  id="email" required/>
             <!-- register summit -->
             <input class="formsubmit" type="submit" value="Submit">
           </form>
