@@ -29,7 +29,7 @@ class dataSender
         {
             $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
         $sql = "INSERT INTO tbl_users (username, email, password)"
-            . "VALUES ('$this->username', '$this->email', '$hashedPassword')";
+            . "VALUES ('$this->username', '$this->email', '$hashedPassword');";
         $this->dbc->query($sql);
         }
 

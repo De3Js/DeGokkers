@@ -1,7 +1,7 @@
 <?php
 namespace App;
-require_once("DataComparer.php");
 session_start();
+require_once("DataComparer.php");
 
 if (isset($_POST["username"], $_POST["password"]))
 {
