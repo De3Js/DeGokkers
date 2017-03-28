@@ -70,7 +70,8 @@ session_start();
             <?php
             if ( isset($_SESSION["error"]))
             {
-                echo "<h2>" . $_SESSION["error"] . "</h2>";
+                echo "<h2> Error: </h2>";
+                echo "<h3>" . $_SESSION["error"] . "</h3>";
                 unset($_SESSION["error"]);
             }
             ?>
@@ -88,7 +89,11 @@ session_start();
             <?php
             if ( isset($_SESSION["reg_error"]))
             {
-                echo "<h2>" . $_SESSION["reg_error"] . "</h2>";
+                echo "<h2> Errors: </h2>";
+                foreach ($_SESSION["reg_error"] as $error)
+                {
+                    echo "<h3>" . $error . "</h3>";
+                }
                 unset($_SESSION["reg_error"]);
             }
             ?>
