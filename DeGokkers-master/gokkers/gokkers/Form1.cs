@@ -62,6 +62,7 @@ namespace gokkers
             splayer.Play();
             bool finish = false;
             bool started = false;
+            int count = 0;
 
             if (started == false)
             {
@@ -70,21 +71,21 @@ namespace gokkers
                     started = true;
                     startButton.Click -= startButton_Click;
                     race = true;
-                    fleas[0].Run(vlooi1);
-                    fleas[1].Run(vlooi2);
-                    fleas[2].Run(vlooi3);
-                    fleas[3].Run(vlooi4);
-                    fleas[4].Run(vlooi5);
-                    fleas[5].Run(vlooi6);
-                    fleas[6].Run(vlooi7);
-                    fleas[7].Run(vlooi8);
-                    fleas[8].Run(vlooi9);
-                    fleas[9].Run(vlooi10);
-                    fleas[10].Run(vlooi11);
-                    fleas[11].Run(vlooi12);
-                    fleas[12].Run(vlooi13);
-                    fleas[13].Run(vlooi14);
-                    fleas[14].Run(vlooi15);
+                    fleas[0].Simulator_Run(vlooi1);
+                    fleas[1].Simulator_Run(vlooi2);
+                    fleas[2].Simulator_Run(vlooi3);
+                    fleas[3].Simulator_Run(vlooi4);
+                    fleas[4].Simulator_Run(vlooi5);
+                    fleas[5].Simulator_Run(vlooi6);
+                    fleas[6].Simulator_Run(vlooi7);
+                    fleas[7].Simulator_Run(vlooi8);
+                    fleas[8].Simulator_Run(vlooi9);
+                    fleas[9].Simulator_Run(vlooi10);
+                    fleas[10].Simulator_Run(vlooi11);
+                    fleas[11].Simulator_Run(vlooi12);
+                    fleas[12].Simulator_Run(vlooi13);
+                    fleas[13].Simulator_Run(vlooi14);
+                    fleas[14].Simulator_Run(vlooi15);
                     for (int i = 0; i < fleas.Length; i++)
                     {
                         if (fleas[i].GetLocation() >= fleas[i].GetRaceTrackLength())
@@ -108,10 +109,37 @@ namespace gokkers
                 }
                 race = false;
 
-                for (int i = 0; i < fleas.Length; i++)
+                do
                 {
-                    fleas[i].TakeStartingPosition();
-                }
+                    fleas[0].TakeStartingPosition();
+                    fleas[1].TakeStartingPosition();
+                    fleas[2].TakeStartingPosition();
+                    fleas[3].TakeStartingPosition();
+                    fleas[4].TakeStartingPosition();
+                    fleas[5].TakeStartingPosition();
+                    fleas[6].TakeStartingPosition();
+                    fleas[7].TakeStartingPosition();
+                    fleas[8].TakeStartingPosition();
+                    fleas[9].TakeStartingPosition();
+                    fleas[10].TakeStartingPosition();
+                    fleas[11].TakeStartingPosition();
+                    fleas[12].TakeStartingPosition();
+                    fleas[13].TakeStartingPosition();
+                    fleas[14].TakeStartingPosition();
+
+                    for (int i = 0; i < fleas.Length; i++)
+                    {
+                        if (fleas[i].GetLocation() == 4)
+                        {
+                            count++;
+                        }
+                        else if(fleas[i].GetLocation() < 4)
+                        {
+                            fleas[i].SetLocation();
+                        }
+                    }
+
+                } while (count != fleas.Length);
             }
         }
         public static string generateName()

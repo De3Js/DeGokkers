@@ -2,7 +2,7 @@
 namespace App;
 
 require_once("DatabaseConnector.php");
-require_once("RegisterValidator.php");
+require_once("DataValidator.php");
 
 class dataSender
 {
@@ -28,9 +28,9 @@ class dataSender
         if ($errorMessage == "Succesfully Registered")
         {
             $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO tbl_users (username, email, password)"
-            . "VALUES ('$this->username', '$this->email', '$hashedPassword')";
-        $this->dbc->query($sql);
+            $sql = "INSERT INTO `tbl_users` (`username`, `email`, `password`)"
+                . "VALUES ('$this->username', '$this->email', '$hashedPassword');";
+            $this->dbc->query($sql);
         }
 
         return $errorMessage;

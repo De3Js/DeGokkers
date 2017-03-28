@@ -87,10 +87,7 @@ namespace gokkers
                 started = false;
                 countdown = true;
                 PositionChecker();
-                for (int i = 0; i < fleas.Length; i++)
-                {
-                    fleas[i].TakeStartingPosition();
-                }
+                walkBack();
             }
         }
         public void playerPress2_KeyPress(object sender, KeyPressEventArgs e)
@@ -106,10 +103,7 @@ namespace gokkers
                 started = false;
                 countdown = true;
                 PositionChecker();
-                for (int i = 0; i < fleas.Length; i++)
-                {
-                    fleas[i].TakeStartingPosition();
-                }
+                walkBack();
             }
         }
         public void playerPress3_KeyPress(object sender, KeyPressEventArgs e)
@@ -125,10 +119,7 @@ namespace gokkers
                 started = false;
                 countdown = true;
                 PositionChecker();
-                for (int i = 0; i < fleas.Length; i++)
-                {
-                    fleas[i].TakeStartingPosition();
-                }
+                walkBack();
             }
         }
         public void playerPress4_KeyPress(object sender, KeyPressEventArgs e)
@@ -144,11 +135,38 @@ namespace gokkers
                 MessageBox.Show(fleas[3].name + " has won!");
                 started = false;
                 countdown = true;
+                walkBack();
+            }
+        }
+        public void walkBack()
+        {
+            int count = 0;
+            do
+            {
+                fleas[0].TakeStartingPosition();
+                fleas[1].TakeStartingPosition();
+                if (players.Length == 3)
+                {
+                    fleas[2].TakeStartingPosition();
+                }
+                else if (players.Length == 4)
+                {
+                    fleas[2].TakeStartingPosition();
+                    fleas[3].TakeStartingPosition();
+                }
                 for (int i = 0; i < fleas.Length; i++)
                 {
-                    fleas[i].TakeStartingPosition();               
+                    if (fleas[i].GetLocation() == 4)
+                    {
+                        count++;
+                    }
+                    else if (fleas[i].GetLocation() < 4)
+                    {
+                        fleas[i].SetLocation();
+                    }
                 }
-            }
+            } while (count != playerAmount);
+            count = 0;
         }
         public void MakePlayers()
         {
