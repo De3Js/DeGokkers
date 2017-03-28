@@ -13,7 +13,7 @@ session_start();
   <body>
     <nav>
       <div class="wrapper">
-          <img src="/images/degokkers_logo.php" alt="gokkerslogo">
+          <img src="Images/degokkers_logo.png" alt="gokkerslogo">
           <ul>
             <li><a href="#hero">HOME</a></li>
             <li><a href="#features">FEATURES</a></li>
@@ -160,7 +160,7 @@ session_start();
               <li>Joey Oonincx</li>
             </ul>
           </div>
-          <img src="" alt="">
+          <img src="Images/degokkers_logo.png" alt="gokkers-logo">
           <div class="footer_contact">
             <ul>
               <li>jpslimmen@gmail.com</li>
