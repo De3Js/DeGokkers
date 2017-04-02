@@ -224,7 +224,10 @@ nav ul li a {
 }
 
 .promote .videoplayer {
-  width: 640px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .promote .videoplayer h3 {
@@ -234,7 +237,7 @@ nav ul li a {
 
 .promote .videoplayer iframe {
   margin-top: 20px;
-  width: 100%;
+  width: 720px;
   height: 320px;
 }
 
@@ -288,8 +291,82 @@ footer .footer_content li {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1070px) {
-  .hero_content h2 {
-    font-size: 2em;
+@media screen and (max-width: 954px) {
+  nav .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .features .smasher {
+    width: 100%;
+    border-right: none;
+    border-bottom: 3px solid #ffb200;
+  }
+  .features .simulator {
+    width: 100%;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .login .loginfield {
+    width: 100%;
+    border-bottom: 3px solid #ffb200;
+    border-right: none;
+  }
+  .login .formsubmit {
+    margin-bottom: 20px;
+  }
+  .login .registerfield {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .download .wrapper .download_content {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .promote .videoplayer iframe {
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .promote .videoplayer iframe {
+    width: 320px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .features .smasher p {
+    font-size: 1.2em;
+  }
+  .features .simulator p {
+    font-size: 1.2em;
+  }
+  .promote .videoplayer iframe {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .features .smasher p {
+    font-size: 1.1em;
+  }
+  .features .simulator p {
+    font-size: 1.1em;
+  }
+  .login .loginfield .loginform .forminput {
+    width: 250px;
+  }
+  .login .registerfield .registerform .forminput {
+    width: 250px;
+  }
+  .promote .videoplayer iframe {
+    width: 220px;
+    height: 150px;
   }
 }
