@@ -12,7 +12,15 @@ if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))
     $confirmPassword = $_POST["confirmPassword"];
     $sender = new DataSender($username, $email, $password, $confirmPassword);
     $message = $sender->Send();
-    $_SESSION["reg_error"] = $message;
+    if ($message != false)
+    {
+        $_SESSION["reg_error"] = $message;
+    }
+    else
+    {
+        $message = "Succesfully registered";
+        $_SESSION["reg_succes"] = $message;
+    }
 }
 else
 {

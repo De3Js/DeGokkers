@@ -96,13 +96,20 @@ session_start();
         </div>
         <div class="registerfield" id="register">
             <?php
-            if ( isset($_SESSION["reg_error"]))
+            if (isset($_SESSION["reg_succes"]))
             {
-                echo "<h2> Errors: </h2>";
-                foreach ($_SESSION["reg_error"] as $error)
-                {
-                    echo "<h3>" . $error . "</h3>";
-                }
+                var_dump($_SESSION["reg_succes"]);
+                echo "<h3>" . $_SESSION["reg_succes"] . "</h3>";
+                unset($_SESSION["reg_succes"]);
+            }
+            else if (isset($_SESSION["reg_error"]))
+            {
+                    echo "<h2> Errors: </h2>";
+                    $errors = $_SESSION["reg_error"];
+                    foreach ($errors as $error)
+                    {
+                        echo "<h3>" . $error . "</h3>";
+                    }
                 unset($_SESSION["reg_error"]);
             }
             ?>

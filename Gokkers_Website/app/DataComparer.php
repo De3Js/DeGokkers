@@ -1,7 +1,7 @@
 <?php
 namespace App;
 
-require_once("DatabaseConnector.php");
+require_once 'DatabaseConnector.php';
 
 class DataComparer
 {
