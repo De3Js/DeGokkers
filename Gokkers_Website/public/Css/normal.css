@@ -1,5 +1,15 @@
+@font-face {
+  font-family: "Prototype";
+  src: url("../fonts/Prototype.eot");
+  src: url("../fonts/Prototype.svg#bingo") format("svg");
+  src: url("../fonts/Prototype.ttf") format("TrueType");
+  font-style: normal;
+  font-weight: normal;
+}
+
 h1, h2, h3, h4, h5, h6, p, li, a {
   color: #fff;
+  font-family: Prototype;
 }
 
 body {
@@ -150,6 +160,7 @@ nav ul li a {
 .login .loginfield .loginform .formlabel {
   color: #fff;
   font-size: 1.4em;
+  font-family: Prototype;
 }
 
 .login .loginfield .loginform .forminput {
@@ -165,6 +176,7 @@ nav ul li a {
   width: 200px;
   height: 30px;
   border-radius: 5px;
+  font-family: Prototype;
 }
 
 .login .registerfield {
@@ -192,6 +204,7 @@ nav ul li a {
 .login .registerfield .registerform .formlabel {
   color: #fff;
   font-size: 1.4em;
+  font-family: Prototype;
 }
 
 .login .registerfield .registerform .forminput {
@@ -209,6 +222,7 @@ nav ul li a {
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  font-family: Prototype;
 }
 
 .promote {
