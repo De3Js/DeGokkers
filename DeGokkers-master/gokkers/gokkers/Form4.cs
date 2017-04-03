@@ -140,33 +140,64 @@ namespace gokkers
         }
         public void walkBack()
         {
-            int count = 0;
+            bool flea1Back = false;
+            bool flea2Back = false;
+            bool flea3Back = false;
+            bool flea4Back = false;
+            bool backed = false;
             do
             {
-                fleas[0].TakeStartingPosition();
-                fleas[1].TakeStartingPosition();
+                if (fleas[0].GetLocation() > 4)
+                {
+                    fleas[0].TakeStartingPosition();
+                }
+                else
+                {
+                    flea1Back = true;
+                }
+                if (fleas[1].GetLocation() > 4)
+                {
+                    fleas[1].TakeStartingPosition();
+                }
+                else
+                {
+                    flea2Back = true;
+                }
                 if (players.Length == 3)
                 {
-                    fleas[2].TakeStartingPosition();
+                    if (fleas[2].GetLocation() > 4)
+                    {
+                        fleas[2].TakeStartingPosition();
+                    }
+                    else
+                    {
+                        flea3Back = true;
+                    }
                 }
                 else if (players.Length == 4)
                 {
-                    fleas[2].TakeStartingPosition();
-                    fleas[3].TakeStartingPosition();
+                    if (fleas[2].GetLocation() > 4)
+                    {
+                        fleas[2].TakeStartingPosition();
+                    }
+                    else
+                    {
+                        flea3Back = true;
+                    }
+                    if (fleas[3].GetLocation() > 4)
+                    {
+                        fleas[3].TakeStartingPosition();
+                    }
+                    else
+                    {
+                        flea4Back = true;
+                    }
                 }
-                for (int i = 0; i < fleas.Length; i++)
+                if (flea1Back == true && flea2Back == true && flea3Back == true && flea4Back == true)
                 {
-                    if (fleas[i].GetLocation() == 4)
-                    {
-                        count++;
-                    }
-                    else if (fleas[i].GetLocation() < 4)
-                    {
-                        fleas[i].SetLocation();
-                    }
+                    backed = true;
                 }
-            } while (count != playerAmount);
-            count = 0;
+            } while (!backed);
         }
         public void MakePlayers()
         {
