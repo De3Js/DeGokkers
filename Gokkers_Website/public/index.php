@@ -14,6 +14,7 @@ session_start();
     <nav>
       <div class="wrapper">
           <img src="Images/degokkers_logo.png" alt="gokkerslogo">
+          <<h1>De Gokkers</h1>
           <ul>
             <li><a href="#hero">HOME</a></li>
             <li><a href="#features">FEATURES</a></li>
