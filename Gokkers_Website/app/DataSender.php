@@ -25,14 +25,12 @@ class dataSender
     public function Send()
     {
         $errorMessage = $this->validator->Validate($this->email, $this->username, $this->password, $this->confirmPassword, $this->dbc);
-        if ($errorMessage == "Succesfully Registered")
+        if ($errorMessage == false)
         {
             $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO `tbl_users` (`username`, `email`, `password`)"
-                . "VALUES ('$this->username', '$this->email', '$hashedPassword');";
+            $sql = "INSERT INTO `tbl_users` (`username`, `email`, `password`) VALUES ('$this->username', '$this->email', '$hashedPassword');";
             $this->dbc->query($sql);
         }
-
         return $errorMessage;
     }
 }
