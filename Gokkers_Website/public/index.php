@@ -137,6 +137,17 @@ session_start();
             <input class="formsubmit" type="submit" value="Submit">
           </form>
         </div>
+          <ul>
+              <li>
+                  <p>Password requires 7 characters.</p>
+              </li>
+              <li>
+                  <p>Password requires 1 number.</p>
+              </li>
+              <li>
+                  <p>Password requires 1 capital letter</p>
+              </li>
+          </ul>
       </div>
     </div>
     <div class="promote"id="promote">
@@ -144,7 +155,7 @@ session_start();
       <div class="wrapper">
         <div class="videoplayer">
           <h3>PROMOTIE VIDEO</h3>
-          <iframe src="https://www.youtube.com/embed/mPo4W-35-js"></iframe>
+          <iframe src="https://www.youtube.com/embed/mON4N5O5Duw"></iframe>
         </div>
       </div>
     </div>

@@ -41,10 +41,6 @@ nav img {
   height: 100px;
 }
 
-nav h1 {
-  font-size: 2.25em;
-}
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
