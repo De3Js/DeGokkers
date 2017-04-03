@@ -1,8 +1,17 @@
 @import "sass-color/colors.sass"
 
 
+@font-face
+  font-family: "Prototype"
+  src: url('../fonts/Prototype.eot')
+  src: url('../fonts/Prototype.svg#bingo') format('svg')
+  src: url('../fonts/Prototype.ttf') format('TrueType')
+  font-style: normal
+  font-weight: normal
+
 h1, h2, h3, h4, h5, h6, p, li,a
   color: $text-color
+  font-family: Prototype
 body
   margin: 0px
   padding: 0px
@@ -113,6 +122,7 @@ nav
       .formlabel
         color: #fff
         font-size: 1.4em
+        font-family: Prototype
       .forminput
         margin-top: 10px
         width: 300px
@@ -124,6 +134,7 @@ nav
         width: 200px
         height: 30px
         border-radius: 5px
+        font-family: Prototype
   .registerfield
     width: 50%
     margin-top: 20px
@@ -141,7 +152,7 @@ nav
       .formlabel
         color: #fff
         font-size: 1.4em
-
+        font-family: Prototype
       .forminput
         margin-top: 10px
         width: 300px
@@ -156,6 +167,7 @@ nav
         border-radius: 5px
         display: flex
         justify-content: center
+        font-family: Prototype
 .promote
   display: flex
   flex-direction: column
@@ -165,14 +177,17 @@ nav
   h2
     flex-direction: row
   .videoplayer
-    width: 640px
+    width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
     h3
       display: flex
       justify-content: center
 
     iframe
       margin-top: 20px
-      width: 100%
+      width: 720px
       height: 320px
 
 
@@ -213,6 +228,60 @@ footer
       list-style: none
       flex-wrap: wrap
 
-@media  screen and (max-width: 1070px)
-    .hero_content h2
-        font-size: 2em
+@media screen and (max-width: 954px)
+   nav .wrapper
+    display: flex
+    flex-direction: column
+
+@media screen and (max-width: 900px)
+  .features
+    .smasher
+      width: 100%
+      border-right: none
+      border-bottom: 3px solid $border-color
+    .simulator
+      width: 100%
+
+  .wrapper
+    flex-direction: column
+  .login
+    .loginfield
+      width: 100%
+      border-bottom: 3px solid $border-color
+      border-right: none
+    .formsubmit
+      margin-bottom: 20px
+
+    .registerfield
+      width: 100%
+      margin-top: 20px
+  .download .wrapper .download_content
+    justify-content: center
+
+@media screen and (max-width: 730px)
+  .promote .videoplayer iframe
+    width: 520px
+
+@media screen and (max-width: 530px)
+  .promote .videoplayer iframe
+    width: 320px
+    height: 220px
+@media screen and (max-width: 500px)
+  .features .smasher p
+    font-size: 1.2em
+  .features .simulator p
+    font-size: 1.2em
+  .promote .videoplayer iframe
+    height: 220px
+@media screen and (max-width: 340px)
+  .features .smasher p
+    font-size: 1.1em
+  .features .simulator p
+    font-size: 1.1em
+  .login .loginfield .loginform .forminput
+    width: 250px
+  .login .registerfield .registerform .forminput
+    width: 250px
+  .promote .videoplayer iframe
+    width: 220px
+    height: 150px
