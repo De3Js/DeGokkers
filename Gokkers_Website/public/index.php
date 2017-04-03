@@ -156,7 +156,7 @@ session_start();
                 if (isset($_SESSION["logged"]))
                 {
                     if ($_SESSION["logged"] == true) {
-                        echo "<a href=\"game\" download> download</a>";
+                        echo "<a href=\"Download/DeGokkers.zip\" download> download</a>";
                     }
                     else
                     {
